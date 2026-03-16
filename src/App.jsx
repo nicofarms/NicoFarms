@@ -1,8 +1,8 @@
-import AppRoutes from "./routes/AppRoutes";
-
+import React from "react";
+import Home from "./pages/Home";
 
 function App() {
-  return <h1>Nico Farms Website</h1>;
+  return <Home />;
 }
 
 export default App;
