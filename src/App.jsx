@@ -1,8 +1,7 @@
 import AppRoutes from "./routes/AppRoutes";
 
-
 function App() {
-  return <h1>Nico Farms Website</h1>;
+  return <AppRoutes />;
 }
 
 export default App;
