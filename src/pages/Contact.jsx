@@ -1,27 +1,27 @@
-import React, { useState } from 'react'
-import Navbar from "../components/navbar";
+import React, { useState } from "react";
+import Navbar from "../components/navbar/Header";
 import Footer from "../components/Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
+    console.log("Form submitted:", formData);
+    alert("Thank you for your message! We will get back to you soon.");
   };
 
   return (
@@ -29,26 +29,28 @@ const Contact = () => {
       <Navbar />
 
       <main className="px-6 md:px-16 py-12">
-
         {/* HEADER */}
         <section className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-green-800">
-            Get in Touch
-          </h1>
+          <h1 className="text-4xl font-bold text-green-800">Get in Touch</h1>
           <p className="text-gray-600 mt-3">
-            Contact us for fresh eggs, poultry supply, or partnership opportunities
+            Contact us for fresh eggs, poultry supply, or partnership
+            opportunities
           </p>
         </section>
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-
           {/* CONTACT FORM */}
           <section>
-            <h2 className="text-2xl font-bold text-green-800 mb-6">Send us a Message</h2>
+            <h2 className="text-2xl font-bold text-green-800 mb-6">
+              Send us a Message
+            </h2>
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-gray-700 font-medium mb-2"
+                >
                   Name *
                 </label>
                 <input
@@ -64,7 +66,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-gray-700 font-medium mb-2"
+                >
                   Email *
                 </label>
                 <input
@@ -80,7 +85,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
+                <label
+                  htmlFor="phone"
+                  className="block text-gray-700 font-medium mb-2"
+                >
                   Phone
                 </label>
                 <input
@@ -95,7 +103,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-gray-700 font-medium mb-2"
+                >
                   Message *
                 </label>
                 <textarea
@@ -121,44 +132,57 @@ const Contact = () => {
 
           {/* CONTACT INFO */}
           <section>
-            <h2 className="text-2xl font-bold text-green-800 mb-6">Contact Information</h2>
+            <h2 className="text-2xl font-bold text-green-800 mb-6">
+              Contact Information
+            </h2>
 
             <div className="space-y-6">
-
               {/* FARM LOCATION */}
               <div className="bg-green-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-green-800 mb-3">Farm Location</h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-3">
+                  Farm Location
+                </h3>
                 <p className="text-gray-700">
-                  Igbessa, Ogun State, Nigeria<br />
+                  Igbessa, Ogun State, Nigeria
+                  <br />
                   Serving communities from Ojo to Badagry in Lagos State
                 </p>
               </div>
 
               {/* OFFICE LOCATION */}
               <div className="bg-green-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-green-800 mb-3">Office Address</h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-3">
+                  Office Address
+                </h3>
                 <p className="text-gray-700">
-                  7 Austin Obiador Street<br />
-                  Ago Palace Way, Okota<br />
+                  7 Austin Obiador Street
+                  <br />
+                  Ago Palace Way, Okota
+                  <br />
                   Isolo, Lagos State, Nigeria
                 </p>
               </div>
 
               {/* BUSINESS ENQUIRIES */}
               <div className="bg-green-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-green-800 mb-3">Business Enquiries</h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-3">
+                  Business Enquiries
+                </h3>
                 <p className="text-gray-700 mb-2">
                   For restaurants, bakeries, retailers, and bulk orders:
                 </p>
                 <p className="text-gray-700">
-                  📧 info@nicofarms.com<br />
+                  📧 info@nicofarms.com
+                  <br />
                   📞 +234 xxx xxx xxxx
                 </p>
               </div>
 
               {/* SOCIAL MEDIA */}
               <div className="bg-green-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-green-800 mb-3">Follow Us</h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-3">
+                  Follow Us
+                </h3>
                 <a
                   href="https://www.instagram.com/nicofarmsltd?igsh=MWYxcmRjd3VmYzBycQ=="
                   target="_blank"
@@ -168,19 +192,20 @@ const Contact = () => {
                   📷 Instagram: @nicofarmsltd
                 </a>
               </div>
-
             </div>
           </section>
-
         </div>
 
         {/* SERVICE AREAS */}
         <section className="mt-16 bg-gray-50 p-8 rounded-lg">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-green-800 mb-4">Service Areas</h2>
+            <h2 className="text-2xl font-bold text-green-800 mb-4">
+              Service Areas
+            </h2>
             <p className="text-lg text-gray-700 mb-6">
-              We proudly serve communities across Ogun and Lagos States, providing fresh,
-              quality poultry products to households, businesses, and food service providers.
+              We proudly serve communities across Ogun and Lagos States,
+              providing fresh, quality poultry products to households,
+              businesses, and food service providers.
             </p>
             <div className="grid md:grid-cols-3 gap-4 text-gray-600">
               <div>🏘️ Igbessa, Ogun State</div>
@@ -189,12 +214,11 @@ const Contact = () => {
             </div>
           </div>
         </section>
-
       </main>
 
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -1,5 +1,5 @@
-import React from 'react'
-import Navbar from "../components/navbar";
+import React from "react";
+import Navbar from "../components/navbar/Header";
 import Footer from "../components/Footer";
 import { team, consultants } from "../data/company";
 
@@ -9,12 +9,9 @@ const Team = () => {
       <Navbar />
 
       <main className="px-6 md:px-16 py-12">
-
         {/* HEADER */}
         <section className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-green-800">
-            Our Team
-          </h1>
+          <h1 className="text-4xl font-bold text-green-800">Our Team</h1>
           <p className="text-gray-600 mt-3">
             Meet the people behind Nico Farms' success
           </p>
@@ -118,12 +115,11 @@ const Team = () => {
             </p>
           </div>
         </section>
-
       </main>
 
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Team
+export default Team;

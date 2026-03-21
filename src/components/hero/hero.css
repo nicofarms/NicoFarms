@@ -1,0 +1,155 @@
+.herobg {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../../assets/images/HEROPAGE.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 85vh;
+  background: rgba(31, 77, 43, 0.144);
+  position: absolute;
+  pointer-events: none;
+}
+
+.hero-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    width: 100%;
+    height: 30%;
+    color: white;
+    line-height: normal;
+    text-align: left;
+    margin-left: 20px;
+    z-index: 1;
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    margin-left: 20px;
+    gap: 20px;
+
+    .butt-tag {
+      padding: 12px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      background-color: #fda304;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      transition: all 350ms ease;
+    }
+
+    .butt-tag:hover {
+      background-color: #e59400;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .butt-secondary {
+      padding: 12px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .butt-secondary:hover {
+      background-color: white;
+      color: #1f4d2b;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .herobg {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../../assets/images/HEROPAGE.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 85vh;
+  background: rgba(31, 77, 43, 0.144);
+  position: absolute;
+  pointer-events: none;
+}
+
+.hero-text {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    width: 100%;
+    height: 30%;
+    color: white;
+    line-height: normal;
+    text-align: left;
+    margin-left: 20px;
+    z-index: 1;
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    margin-left: 20px;
+    gap: 20px;
+
+    .butt-tag {
+      padding: 8px 18px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      background-color: #fda304;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      transition: all 350ms ease;
+    }
+
+    .butt-tag:hover {
+      background-color: #e59400;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .butt-secondary {
+      padding: 8px 18px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .butt-secondary:hover {
+      background-color: white;
+      color: #1f4d2b;
+    }
+  }
+}
+}
