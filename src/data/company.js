@@ -82,9 +82,9 @@ export const team = [
 export const consultants = [
   {
     name: "Dr. Adewole Saidi Abiola",
-    role: "Nutritionist, Farm Consultant & Poultry Veterinary Specialist",
+    role: "Nutritionist & Farm Consultant",
     company: "Golden Farm Care",
-    bio: "Dr. Adewole is a passionate poultry farmer and poultry veterinary specialist dedicated to raising healthy and productive birds. With practical knowledge in poultry health management, disease prevention, and modern poultry farming techniques, he ensures high-quality poultry production at Nico Farms.",
+    bio: "Dr. Adewole Saidi Abiola is a poultry veterinary specialist and farm consultant with a strong focus on animal health, nutrition, and sustainable poultry production.",
     specialties: [
       "Poultry Nutrition & Feeding Programs",
       "Disease Prevention & Health Management",
@@ -93,14 +93,20 @@ export const consultants = [
       "Modern Poultry Farming Techniques",
       "Flock Management & Productivity",
     ],
-    about: `Through his firm Golden Farm Care, Dr. Adewole focuses on proper feeding, biosecurity, and professional veterinary care to maintain strong and healthy flocks. His mission is to provide safe, healthy poultry products while supporting farmers with reliable poultry health solutions. He is committed to improving poultry farming through professionalism, innovation, and quality farm management.\n\nDr. Adewole works closely with Nico Farms to ensure that all birds receive optimal nutrition, preventive care, and professional veterinary oversight. His expertise helps maintain the high standards of animal welfare and product quality that Nico Farms is known for.`,
+    about: `Dr. Adewole Saidi Abiola is a poultry veterinary specialist and farm consultant with a strong focus on animal health, nutrition, and sustainable poultry production.
+
+He is the founder of Golden Farm Care, an enterprise dedicated to delivering professional poultry health and management solutions. Through this platform, he has built practical expertise in poultry health management, disease prevention, nutrition, and modern farming techniques aimed at improving productivity and flock performance.
+
+At Nico AgriFarms, Dr. Abiola provides expert guidance on nutrition, biosecurity, and overall farm health management, ensuring that the farm maintains high standards in animal welfare and product quality. His hands-on approach supports the development of efficient feeding systems, disease control strategies, and best practices in poultry care.
+
+Driven by a commitment to excellence, Dr. Abiola works to promote safe, healthy poultry production while supporting the growth of sustainable farming systems. His work continues to contribute to improved farm outcomes through professionalism, innovation, and quality-driven management.`,
     image: consultantImage,
   },
   {
-    name: "Mrs. Ngozi C. Okonkwo",
-    role: "Managing Director (MD)",
+    name: "Ngozi Christiana Okonkwo",
+    role: "Managing Director",
     company: "Nico AgriFarms Limited",
-    bio: "Mrs. Ngozi C. Okonkwo is the Managing Director of Nico AgriFarms Limited, bringing strategic leadership and operational excellence to the organization. With her vision and management expertise, she oversees the company's day-to-day operations and drives growth initiatives.",
+    bio: "Ngozi Christiana Okonkwo is the Managing Director of Nico AgriFarms Limited, bringing with her a wealth of business experience, leadership, and a strong entrepreneurial legacy.",
     specialties: [
       "Strategic Management",
       "Business Operations",
@@ -108,7 +114,13 @@ export const consultants = [
       "Business Development",
       "Project Management",
     ],
-    about: `As Managing Director, Mrs. Ngozi C. Okonkwo provides strategic direction and operational oversight for Nico AgriFarms Limited. Her leadership ensures that the company maintains its commitment to quality, animal welfare, and sustainable farming practices while achieving business objectives and supporting community development.`,
+    about: `Ngozi Christiana Okonkwo is the Managing Director of Nico AgriFarms Limited, bringing with her a wealth of business experience, leadership, and a strong entrepreneurial legacy.
+
+She is the driving force behind Nico Trucking Nigeria Limited, a venture specialising in the sale of trucks and heavy-duty equipment. Through this enterprise, she has built a reputation for operational excellence, strategic business development, and delivering value within the logistics and equipment sector.
+
+At Nico AgriFarms, Ngozi leverages her extensive experience to strengthen operational structures, support strategic planning, and drive the company towards achieving its performance targets. Her practical approach to business, combined with a strong focus on efficiency and accountability, has contributed significantly to the growth and stability of the organisation.
+
+With a deep understanding of business operations and a commitment to excellence, she plays a key role in ensuring that Nico AgriFarms continues to operate professionally while positioning itself for long-term success and expansion.`,
     image: mdImage,
   },
   {
