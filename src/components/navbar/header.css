@@ -189,7 +189,7 @@ input::placeholder {
       gap: 20%;
       margin-left: 0%;
       justify-content: center;
-      font-size: 12px;
+      font-size: 11px;
       color: rgb(254, 195, 35);
       font-weight: 600;
 
@@ -203,7 +203,6 @@ input::placeholder {
     .logo-container {
       width: 14%;
       height: 100%;
-      margin-right: 5%;
 
       img {
         width: 100%;
@@ -218,10 +217,11 @@ input::placeholder {
       align-items: center;
       gap: 20%;
       justify-content: center;
-      font-size: 12px;
+      font-size: 11px;
       color: rgb(254, 195, 35);
       font-weight: 600;
       margin-right: 4%;
+      margin-left: 5%;
 
       p:hover {
         color: white;
