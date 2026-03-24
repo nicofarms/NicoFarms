@@ -1,7 +1,10 @@
 .footer {
-  background: #1f4d2b;
+  background: #13381d;
   color: #fff;
-  padding: 60px 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 50px;
 }
 
 .footer-container {

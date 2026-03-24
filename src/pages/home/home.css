@@ -1,6 +1,7 @@
 .about-section {
   width: 100%;
   height: max-content;
+  background-color: white;
   display: flex;
   flex-direction: column;
   margin-top: 50px;
@@ -130,6 +131,7 @@
 .products-section {
   padding: 60px 80px;
   text-align: center;
+  background-color: white;
 }
 
 .products-section h2 {
@@ -202,6 +204,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
 }
 
 .why-choose h2 {
@@ -300,7 +303,7 @@
   .con-text p {
     font-size: 14px;
     line-height: 1.5;
-    text-align: center;
+    text-align: center !important;
   }
 
   .learn-butt {
