@@ -56,14 +56,15 @@ input::placeholder {
 
 .head-container {
   width: 100%;
-  height: 60px;
-  background-color: #1f4d2b;
+  height: 70px;
+  background-color: white;
   display: flex;
   gap: 10px;
   position: sticky;
   top: 40px;
   z-index: 100;
   align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   .first-con {
     width: 20%;
@@ -74,24 +75,26 @@ input::placeholder {
     margin-left: 20%;
     justify-content: center;
     font-size: 16px;
-    color: rgb(254, 195, 35);
+    color: #1f4d2b;
     font-weight: 600;
 
     p:hover {
-      color: white;
+      color: orange;
       cursor: pointer;
       transition: all ease-in-out 200ms;
     }
   }
 
   .logo-container {
-    width: 5%;
-    height: 80%;
+    width: 6%;
+    height: 100%;
     margin-left: 10px;
+    margin-bottom: 7px;
 
     img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
     }
   }
 
@@ -103,14 +106,18 @@ input::placeholder {
     gap: 20%;
     justify-content: center;
     font-size: 16px;
-    color: rgb(254, 195, 35);
+    color: #1f4d2b;
     font-weight: 600;
 
     p:hover {
-      color: white;
+      color: rgb(254, 195, 35);
       cursor: pointer;
       transition: all ease-in-out 200ms;
     }
+  }
+
+  .burger {
+    display: none;
   }
 }
 
@@ -174,32 +181,32 @@ input::placeholder {
   .head-container {
     width: 100%;
     height: 50px;
-    background-color: #1f4d2b;
+    background-color: white;
     display: flex;
     gap: 0px;
     position: sticky;
     gap: 12%;
-    justify-content: center;
+    justify-content: space-between;
     top: 40px;
     z-index: 100;
 
     .first-con {
       width: 20%;
       height: 100%;
-      display: flex;
+      display: none;
       align-items: center;
       gap: 20%;
       margin-left: 0%;
       justify-content: center;
       font-size: 11px;
-      color: rgb(254, 195, 35);
+      color: #1f4d2b;
       font-weight: 600;
 
-      p:hover {
+      /* p:hover {
         color: white;
         cursor: pointer;
         transition: all ease-in-out 200ms;
-      }
+      } */
     }
 
     .logo-container {
@@ -215,12 +222,12 @@ input::placeholder {
     .last-con {
       width: 20%;
       height: 100%;
-      display: flex;
+      display: none;
       align-items: center;
       gap: 20%;
       justify-content: center;
       font-size: 11px;
-      color: rgb(254, 195, 35);
+      color: #1f4d2b;
       font-weight: 600;
       margin-right: 11%;
       margin-left: 6%;
@@ -230,6 +237,12 @@ input::placeholder {
         cursor: pointer;
         transition: all ease-in-out 200ms;
       }
+    }
+
+    .burger {
+      display: flex;
+      margin-right: 20px;
+      font-size: 20px;
     }
   }
 }

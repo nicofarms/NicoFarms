@@ -155,6 +155,7 @@
 
 // export default Navbar;
 
+import { RxHamburgerMenu } from "react-icons/rx";
 import "./header.css";
 import { IoIosSearch } from "react-icons/io";
 
@@ -175,7 +176,7 @@ const Navbar = () => {
       </div>
       <div className="head-container">
         <div className="logo-container">
-          <img src="/IMG/NicoFarmLogo.jpg" alt="" />
+          <img src="/IMG/Nico-LOgo.png" alt="" />
         </div>
         <div className="first-con">
           <p>ABOUT</p>
@@ -185,6 +186,7 @@ const Navbar = () => {
           <p>SUSTAINABILITY</p>
           <p>CONTACT</p>
         </div>
+        <span className="burger"><RxHamburgerMenu /></span>
       </div>
     </>
   );
