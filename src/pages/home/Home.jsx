@@ -316,6 +316,7 @@ function Home() {
           </div>
         </div>
       </section>
+      {/* snk knzdnm, z */}
 
       <section className="why-choose">
         <h2>Why Choose Us</h2>
