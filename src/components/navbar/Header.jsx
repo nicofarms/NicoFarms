@@ -158,8 +158,18 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import "./header.css";
 import { IoIosSearch } from "react-icons/io";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [showSide, setShowSide] = useState(false);
+
+  useEffect(() => {
+    if (showSide) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [showSide]);
   return (
     <>
       <div className="top-head">
@@ -186,7 +196,22 @@ const Navbar = () => {
           <p>SUSTAINABILITY</p>
           <p>CONTACT</p>
         </div>
-        <span className="burger"><RxHamburgerMenu /></span>
+        <span
+          className={`burger ${showSide ? "active" : ""}`}
+          onClick={() => setShowSide(!showSide)}
+        >
+          <span className="line line1"></span>
+          <span className="line line2"></span>
+          <span className="line line3"></span>
+        </span>
+      </div>
+      <div className={`sideBar ${showSide ? "active" : ""}`}>
+        <div className="nav-items">
+          <p>Home</p>
+          <p>Farmers Markets & Events</p>
+          <p>About</p>
+        </div>
+        <button>DONATE</button>
       </div>
     </>
   );

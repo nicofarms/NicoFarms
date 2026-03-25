@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .herobg {
   width: 100%;
   height: 85vh;

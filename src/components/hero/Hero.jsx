@@ -66,10 +66,11 @@
 
 // export default Hero;
 
-import React from "react";
+import React, { useState } from "react";
 import "./hero.css";
 
 const Hero = () => {
+
   return (
     <div className="herobg">
       <div className="hero-overlay"></div>
