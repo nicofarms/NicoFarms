@@ -80,7 +80,6 @@ export const team = [
       "Business Analytics & Data-Driven Decisions",
       "Agribusiness Scalability",
       "Startup Development",
-      "Financial Services Integration",
       "Sustainable Farming Practices"
     ],
     about: `Kenneth Geoffrey is the Founder and Chief Executive Officer of Nico AgriFarms Limited, an agribusiness established in 2020 with a vision to deliver high-quality poultry products while prioritising animal welfare, operational excellence and sustainable farming practices.
