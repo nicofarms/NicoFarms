@@ -74,7 +74,6 @@ export const team = [
   {
     name: "Kenneth Geoffrey",
     role: "Founder & Chief Executive Officer",
-    company: "Nico AgriFarms Limited",
     bio: "Kenneth Geoffrey is the Founder and Chief Executive Officer of Nico AgriFarms Limited, an agribusiness established in 2020 with a vision to deliver high-quality poultry products while prioritising animal welfare and sustainable farming.",
     specialties: [
       "Strategic Operational Leadership",
@@ -105,7 +104,6 @@ export const consultants = [
   {
     name: "Ngozi Christiana Okonkwo",
     role: "Managing Director",
-    company: "Nico AgriFarms Limited",
     bio: "Ngozi Christiana Okonkwo is the Managing Director of Nico AgriFarms Limited, bringing with her a wealth of business experience, leadership and a strong entrepreneurial legacy.",
     specialties: [
       "Strategic Management",
@@ -126,7 +124,6 @@ export const consultants = [
   {
     name: "Blessing Okonkwo, BA LLB LLM",
     role: "Legal and Compliance Advisor",
-    company: "Nico AgriFarms Limited",
     bio: "Blessing Okonkwo is a legally trained professional with a strong foundation in corporate and commercial law, regulatory compliance and legal risk management.",
     specialties: [
       "Business Law",
@@ -148,7 +145,6 @@ export const consultants = [
   {
     name: "Chinaza Aroh-Anyika",
     role: "Finance and Accounts Officer",
-    company: "Nico AgriFarms Limited",
     bio: "Chinaza Aroh-Anyika is a finance and accounting professional with over five years of experience supporting businesses across consulting, healthcare, hospitality, logistics and agriculture.",
     specialties: [
       "Structured Accounting Systems",
@@ -170,7 +166,6 @@ With a keen eye for detail and a practical approach to financial management, she
   {
     name: "Dr. Adewole Saidi Abiola",
     role: "Nutritionist & Farm Consultant",
-    company: "Golden Farm Care",
     bio: "Dr. Adewole Saidi Abiola is a poultry veterinary specialist and farm consultant with a strong focus on animal health, nutrition and sustainable poultry production.",
     specialties: [
       "Poultry Nutrition & Feeding Programs",
