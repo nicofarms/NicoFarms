@@ -102,28 +102,6 @@ Kenneth is focused on building Nico AgriFarms into a scalable, investor-ready ag
 
 export const consultants = [
   {
-    name: "Dr. Adewole Saidi Abiola",
-    role: "Nutritionist & Farm Consultant",
-    company: "Golden Farm Care",
-    bio: "Dr. Adewole Saidi Abiola is a poultry veterinary specialist and farm consultant with a strong focus on animal health, nutrition and sustainable poultry production.",
-    specialties: [
-      "Poultry Nutrition & Feeding Programs",
-      "Disease Prevention & Health Management",
-      "Veterinary Care & Bird Health",
-      "Biosecurity Protocols",
-      "Modern Poultry Farming Techniques",
-      "Flock Management & Productivity",
-    ],
-    about: `Dr. Adewole Saidi Abiola is a poultry veterinary specialist and farm consultant with a strong focus on animal health, nutrition and sustainable poultry production.
-
-He is the founder of Golden Farm Care, an enterprise dedicated to delivering professional poultry health and management solutions. Through this platform, he has built practical expertise in poultry health management, disease prevention, nutrition and modern farming techniques aimed at improving productivity and flock performance.
-
-At Nico AgriFarms, Dr. Abiola provides expert guidance on nutrition, biosecurity and overall farm health management, ensuring that the farm maintains high standards in animal welfare and product quality. His hands-on approach supports the development of efficient feeding systems, disease control strategies and best practices in poultry care.
-
-Driven by a commitment to excellence, Dr. Abiola works to promote safe, healthy poultry production while supporting the growth of sustainable farming systems. His work continues to contribute to improved farm outcomes through professionalism, innovation and quality-driven management.`,
-    image: consultantImage,
-  },
-  {
     name: "Ngozi Christiana Okonkwo",
     role: "Managing Director",
     company: "Nico AgriFarms Limited",
@@ -181,5 +159,27 @@ Chinaza holds a Second Class Upper degree from Imo State University and is curre
 
 With a keen eye for detail and a practical approach to financial management, she works closely with Nico AgriFarms to develop efficient and reliable financial processes that support long-term growth and operational stability.`,
     image: financeImage,
+  },
+  {
+    name: "Dr. Adewole Saidi Abiola",
+    role: "Nutritionist & Farm Consultant",
+    company: "Golden Farm Care",
+    bio: "Dr. Adewole Saidi Abiola is a poultry veterinary specialist and farm consultant with a strong focus on animal health, nutrition and sustainable poultry production.",
+    specialties: [
+      "Poultry Nutrition & Feeding Programs",
+      "Disease Prevention & Health Management",
+      "Veterinary Care & Bird Health",
+      "Biosecurity Protocols",
+      "Modern Poultry Farming Techniques",
+      "Flock Management & Productivity",
+    ],
+    about: `Dr. Adewole Saidi Abiola is a poultry veterinary specialist and farm consultant with a strong focus on animal health, nutrition and sustainable poultry production.
+
+He is the founder of Golden Farm Care, an enterprise dedicated to delivering professional poultry health and management solutions. Through this platform, he has built practical expertise in poultry health management, disease prevention, nutrition and modern farming techniques aimed at improving productivity and flock performance.
+
+At Nico AgriFarms, Dr. Abiola provides expert guidance on nutrition, biosecurity and overall farm health management, ensuring that the farm maintains high standards in animal welfare and product quality. His hands-on approach supports the development of efficient feeding systems, disease control strategies and best practices in poultry care.
+
+Driven by a commitment to excellence, Dr. Abiola works to promote safe, healthy poultry production while supporting the growth of sustainable farming systems. His work continues to contribute to improved farm outcomes through professionalism, innovation and quality-driven management.`,
+    image: consultantImage,
   },
 ];
