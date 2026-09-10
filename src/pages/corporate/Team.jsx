@@ -10,6 +10,14 @@ const filters = [
   { label: "Advisory", value: "advisory" },
 ];
 
+const getAdvisoryIcon = (role = "") => {
+  const value = role.toLowerCase();
+  if (value.includes("legal") || value.includes("complian")) return "policy";
+  if (value.includes("financ") || value.includes("account")) return "account_balance";
+  if (value.includes("agro") || value.includes("nutrition")) return "agriculture";
+  return "workspace_premium";
+};
+
 const getCategory = (member) => {
   const role = member.role.toLowerCase();
   if (role.includes("founder") || role.includes("managing director")) return "executive";
@@ -37,7 +45,7 @@ const Team = () => {
               <span className="status-dot" />
               Institutional Governance &amp; Agronomics
             </div>
-            <h1>Corporate Governance &amp; dedicated agro-specialists driving quality since 2020.</h1>
+            <h1>Corporate Governance &amp; Dedicated Agro-Specialists   Driving Quality Since 2020.</h1>
             <p>
               The leadership steering Nico Farms combines strategic business leadership,
               financial discipline, legal guidance and hands-on poultry operations across Ogun
@@ -47,11 +55,11 @@ const Team = () => {
           <div className="registry-card">
             <div className="registry-heading">
               <span>Enterprise Registry</span>
-              <span className="registry-check">✓</span>
+              <span className="registry-check material-symbols-outlined">verified</span>
             </div>
             <div className="registry-row"><span>Established</span><strong>2020</strong></div>
             <div className="registry-row"><span>Business</span><strong>Nico AgriFarms Ltd.</strong></div>
-            <div className="registry-row"><span>Operating base</span><strong>Ogun &amp; Lagos</strong></div>
+            <div className="registry-row"><span>Operating Base</span><strong>Ogun &amp; Lagos</strong></div>
           </div>
         </div>
         <div className="corporate-shell metric-grid">
@@ -95,7 +103,7 @@ const Team = () => {
           <div className="featured-content">
             <div className="profile-topline">
               <span className="role-pill">{featuredMember.role}</span>
-              <span className="verified">✓ Nico AgriFarms leadership</span>
+              <span className="verified"><span className="material-symbols-outlined">verified_user</span>Nico AgriFarms Leadership</span>
             </div>
             <h3>{featuredMember.name}</h3>
             <p className="qualification">Founder and principal executive of Nico AgriFarms Limited</p>
@@ -106,9 +114,9 @@ const Team = () => {
               <div><span>Founded</span><strong>2020</strong></div>
             </div>
             <div className="profile-actions">
-              <span className="location">⌖ Ogun State / Lagos</span>
+              <span className="location"><span className="material-symbols-outlined">location_on</span>Lagos HQ / Ejila, Ogun</span>
               <button className="primary-button" onClick={() => setSelectedMember(featuredMember)} type="button">
-                Executive profile <span>→</span>
+                Executive profile <span className="material-symbols-outlined">arrow_forward</span>
               </button>
             </div>
           </div>
@@ -132,8 +140,10 @@ const Team = () => {
                 <div className="staff-role">{member.role}</div>
                 <p>{member.bio}</p>
                 <div className="staff-footer">
-                  <span>● Active</span>
-                  <button onClick={() => setSelectedMember(member)} type="button">View profile →</button>
+                  <span><span className="staff-dot" />Active</span>
+                  <button onClick={() => setSelectedMember(member)} type="button">
+                      View profile <span className="material-symbols-outlined">arrow_forward</span>
+                  </button>
                 </div>
               </div>
             </article>
@@ -147,17 +157,17 @@ const Team = () => {
             <div className="eyebrow">Institutional Blueprint</div>
             <h2>Corporate Architecture &amp; line authority</h2>
             <p>Our leadership structure separates strategic direction, operational delivery and compliance so quality remains visible at every stage of the farm-to-customer journey.</p>
-            <div className="principle"><span className="principle-icon">✓</span><div><h3>Animal welfare first</h3><p>Every operational decision protects the welfare of our birds and the quality of our products.</p></div></div>
-            <div className="principle"><span className="principle-icon amber">↗</span><div><h3>Independent accountability</h3><p>Legal, finance and operations specialists provide focused oversight as Nico Farms grows.</p></div></div>
+            <div className="principle"><span className="principle-icon material-symbols-outlined">shield</span><div><h3>Animal welfare first</h3><p>Every operational decision protects the welfare of our birds and the quality of our products.</p></div></div>
+            <div className="principle"><span className="principle-icon amber material-symbols-outlined">account_tree</span><div><h3>Independent accountability</h3><p>Legal, finance and operations specialists provide focused oversight as Nico Farms grows.</p></div></div>
           </div>
           <div className="hierarchy-card">
             <div className="hierarchy-heading"><span>Operational team hierarchy</span><strong>Active</strong></div>
-            <div className="hierarchy-lead"><span>Executive direction</span><b>Founder &amp; Managing Director</b><i>◆</i></div>
+            <div className="hierarchy-lead"><span>Executive direction</span><b>Founder &amp; Managing Director</b><i className="material-symbols-outlined">corporate_fare</i></div>
             <div className="hierarchy-columns">
               <div><span>Operations branch</span><h3>Farm Management</h3><p>Daily production, flock care and farm infrastructure.</p></div>
               <div><span>Advisory branch</span><h3>Finance, Legal &amp; Nutrition</h3><p>Specialist guidance for resilient, compliant growth.</p></div>
             </div>
-            <div className="hierarchy-bottom"><span>Commercial engine</span><b>Quality products for Nigerian households and businesses</b><i>→</i></div>
+            <div className="hierarchy-bottom"><span>Commercial engine</span><b>Quality products for Nigerian households and businesses</b><i className="material-symbols-outlined">rv_hookup</i></div>
           </div>
         </div>
       </section>
@@ -170,11 +180,11 @@ const Team = () => {
         <div className="advisory-grid">
           {consultants.slice(0, 3).map((member, index) => (
             <article className="advisory-card" key={member.name}>
-              <span className="advisory-icon">{["⌁", "◈", "◌"][index]}</span>
+              <span className="advisory-icon material-symbols-outlined">{getAdvisoryIcon(member.role)}</span>
               <h3>{member.name}</h3>
               <div className="staff-role">{member.role}</div>
               <p>{member.bio}</p>
-              <button onClick={() => setSelectedMember(member)} type="button">View specialist profile →</button>
+              <button onClick={() => setSelectedMember(member)} type="button">View specialist profile <span className="material-symbols-outlined">arrow_forward</span></button>
             </article>
           ))}
         </div>
@@ -184,16 +194,16 @@ const Team = () => {
         <div className="corporate-shell standards-grid">
           <div><div className="eyebrow light">Operational Safety Culture</div><h2>Responsible standards, from farm to table.</h2><p>Nico Farms is committed to disciplined farming practices, quality assurance and the welfare of the animals in our care.</p></div>
           <div className="standards-list">
-            <div>✓ <span>Responsible poultry management</span></div>
-            <div>✓ <span>Quality-focused production</span></div>
-            <div>✓ <span>Clean and accountable operations</span></div>
-            <div>✓ <span>Sustainable farming practices</span></div>
+            <div><span className="material-symbols-outlined">check_circle</span><span>Responsible poultry management</span></div>
+            <div><span className="material-symbols-outlined">check_circle</span><span>Quality-focused production</span></div>
+            <div><span className="material-symbols-outlined">check_circle</span><span>Clean and accountable operations</span></div>
+            <div><span className="material-symbols-outlined">check_circle</span><span>Sustainable farming practices</span></div>
           </div>
         </div>
       </section>
 
       <section className="corporate-shell join-section">
-        <div className="join-card"><div><span className="eyebrow">Join Our Mission</span><h2>Build the future of responsible farming.</h2><p>We are building a structured, investor-ready agribusiness and welcome committed people who want to contribute to Nigeria&apos;s food security.</p></div><button className="primary-button" type="button" onClick={()=>navigate('/investors')}>Work with Nico Farms <span>→</span></button></div>
+        <div className="join-card"><div><span className="eyebrow">Join Our Mission</span><h2>Build the future of responsible farming.</h2><p>We are building a structured, investor-ready agribusiness and welcome committed people who want to contribute to Nigeria&apos;s food security.</p></div><button className="primary-button" type="button" onClick={()=>navigate('/investors')}>Work with Nico Farms <span className="material-symbols-outlined">arrow_forward</span></button></div>
       </section>
 
       {selectedMember && (
