@@ -1,5 +1,5 @@
 // Import team member images
-import ceoImage from "/IMG/ceo.jpeg";
+import ceoImage from "/IMG/nico-farm-CEO.jpeg";
 import consultantImage from "/IMG/consultant.jpeg";
 import mdImage from "/IMG/md.jpeg";
 import legalImage from "/IMG/legal.jpeg";
