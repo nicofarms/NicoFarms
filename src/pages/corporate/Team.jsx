@@ -89,8 +89,8 @@ const Team = () => {
       <section className="corporate-shell section-block">
         <div className="section-intro">
           <div>
-            <div className="eyebrow">The Core Directorate</div>
-            <h2>Executive Leadership</h2>
+            <div className="eyebrow">Our Team</div>
+            <h2 style={{color: "black"}}>Executive Leadership</h2>
           </div>
           <p>Experienced leaders combining commercial discipline with a practical commitment to responsible Nigerian agriculture.</p>
         </div>
@@ -155,7 +155,7 @@ const Team = () => {
         <div className="corporate-shell architecture-grid">
           <div className="architecture-copy">
             <div className="eyebrow">Institutional Blueprint</div>
-            <h2>Corporate Architecture &amp; line authority</h2>
+            <h2 style={{color: "black"}}>Corporate Architecture &amp; line authority</h2>
             <p>Our leadership structure separates strategic direction, operational delivery and compliance so quality remains visible at every stage of the farm-to-customer journey.</p>
             <div className="principle"><span className="principle-icon material-symbols-outlined">shield</span><div><h3>Animal welfare first</h3><p>Every operational decision protects the welfare of our birds and the quality of our products.</p></div></div>
             <div className="principle"><span className="principle-icon amber material-symbols-outlined">account_tree</span><div><h3>Independent accountability</h3><p>Legal, finance and operations specialists provide focused oversight as Nico Farms grows.</p></div></div>
@@ -174,7 +174,7 @@ const Team = () => {
 
       <section className="corporate-shell section-block advisory-section">
         <div className="section-intro">
-          <div><div className="eyebrow">Strategic Counsel</div><h2>Specialist Advisory Council</h2></div>
+          <div><div className="eyebrow">Strategic Counsel</div><h2 style={{color: "black"}}>Specialist Advisory Council</h2></div>
           <p>Independent subject-matter expertise supporting operational excellence, financial clarity, regulatory confidence and healthy poultry production.</p>
         </div>
         <div className="advisory-grid">
@@ -203,7 +203,7 @@ const Team = () => {
       </section>
 
       <section className="corporate-shell join-section">
-        <div className="join-card"><div><span className="eyebrow">Join Our Mission</span><h2>Build the future of responsible farming.</h2><p>We are building a structured, investor-ready agribusiness and welcome committed people who want to contribute to Nigeria&apos;s food security.</p></div><button className="primary-button" type="button" onClick={()=>navigate('/investors')}>Work with Nico Farms <span className="material-symbols-outlined">arrow_forward</span></button></div>
+        <div className="join-card"><div><span className="eyebrow">Join Our Mission</span><h2 style={{color: "black"}}>Build the future of responsible farming.</h2><p>We are building a structured, investor-ready agribusiness and welcome committed people who want to contribute to Nigeria&apos;s food security.</p></div><button className="primary-button" type="button" onClick={()=>navigate('/investors')}>Work with Nico Farms <span>→</span></button></div>
       </section>
 
       {selectedMember && (
