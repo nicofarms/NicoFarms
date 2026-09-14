@@ -37,7 +37,7 @@ const Navbar = () => {
             className={isActive("/team") ? "active" : ""}
             onClick={() => navigate("/team")}
           >
-            CORPORATE
+            OUR TEAM
           </p>
           <p
             className={isActive("/investors") ? "active" : ""}
