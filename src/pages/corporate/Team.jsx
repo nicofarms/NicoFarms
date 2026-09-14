@@ -151,56 +151,6 @@ const Team = () => {
         </div>
       </section>
 
-      <section className="architecture-section">
-        <div className="corporate-shell architecture-grid">
-          <div className="architecture-copy">
-            <div className="eyebrow">Institutional Blueprint</div>
-            <h2 style={{color: "black"}}>Corporate Architecture &amp; line authority</h2>
-            <p>Our leadership structure separates strategic direction, operational delivery and compliance so quality remains visible at every stage of the farm-to-customer journey.</p>
-            <div className="principle"><span className="principle-icon material-symbols-outlined">shield</span><div><h3>Animal welfare first</h3><p>Every operational decision protects the welfare of our birds and the quality of our products.</p></div></div>
-            <div className="principle"><span className="principle-icon amber material-symbols-outlined">account_tree</span><div><h3>Independent accountability</h3><p>Legal, finance and operations specialists provide focused oversight as Nico Farms grows.</p></div></div>
-          </div>
-          <div className="hierarchy-card">
-            <div className="hierarchy-heading"><span>Operational team hierarchy</span><strong>Active</strong></div>
-            <div className="hierarchy-lead"><span>Executive direction</span><b>Founder &amp; Managing Director</b><i className="material-symbols-outlined">corporate_fare</i></div>
-            <div className="hierarchy-columns">
-              <div><span>Operations branch</span><h3>Farm Management</h3><p>Daily production, flock care and farm infrastructure.</p></div>
-              <div><span>Advisory branch</span><h3>Finance, Legal &amp; Nutrition</h3><p>Specialist guidance for resilient, compliant growth.</p></div>
-            </div>
-            <div className="hierarchy-bottom"><span>Commercial engine</span><b>Quality products for Nigerian households and businesses</b><i className="material-symbols-outlined">rv_hookup</i></div>
-          </div>
-        </div>
-      </section>
-
-      <section className="corporate-shell section-block advisory-section">
-        <div className="section-intro">
-          <div><div className="eyebrow">Strategic Counsel</div><h2 style={{color: "black"}}>Specialist Advisory Council</h2></div>
-          <p>Independent subject-matter expertise supporting operational excellence, financial clarity, regulatory confidence and healthy poultry production.</p>
-        </div>
-        <div className="advisory-grid">
-          {consultants.slice(0, 3).map((member, index) => (
-            <article className="advisory-card" key={member.name}>
-              <span className="advisory-icon material-symbols-outlined">{getAdvisoryIcon(member.role)}</span>
-              <h3>{member.name}</h3>
-              <div className="staff-role">{member.role}</div>
-              <p>{member.bio}</p>
-              <button onClick={() => setSelectedMember(member)} type="button">View specialist profile <span className="material-symbols-outlined">arrow_forward</span></button>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="standards-section">
-        <div className="corporate-shell standards-grid">
-          <div><div className="eyebrow light">Operational Safety Culture</div><h2>Responsible standards, from farm to table.</h2><p>Nico Farms is committed to disciplined farming practices, quality assurance and the welfare of the animals in our care.</p></div>
-          <div className="standards-list">
-            <div><span className="material-symbols-outlined">check_circle</span><span>Responsible poultry management</span></div>
-            <div><span className="material-symbols-outlined">check_circle</span><span>Quality-focused production</span></div>
-            <div><span className="material-symbols-outlined">check_circle</span><span>Clean and accountable operations</span></div>
-            <div><span className="material-symbols-outlined">check_circle</span><span>Sustainable farming practices</span></div>
-          </div>
-        </div>
-      </section>
 
       <section className="corporate-shell join-section">
         <div className="join-card"><div><span className="eyebrow">Join Our Mission</span><h2 style={{color: "black"}}>Build the future of responsible farming.</h2><p>We are building a structured, investor-ready agribusiness and welcome committed people who want to contribute to Nigeria&apos;s food security.</p></div><button className="primary-button" type="button" onClick={()=>navigate('/investors')}>Work with Nico Farms <span>→</span></button></div>
