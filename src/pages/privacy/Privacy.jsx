@@ -166,7 +166,7 @@
 
 // export default privacy;
 
-import "./privacyPolicy.css";
+import "./privacypolicy.css";
 
 const PrivacyPolicy = () => {
   return (
