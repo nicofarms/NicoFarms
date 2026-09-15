@@ -14,7 +14,7 @@ const Sustainability = () => {
       <section className="sustain-section">
         <div className="sustain-grid">
           <div className="sustain-image">
-            <img src="/api/placeholder/500/400" alt="Animal Welfare" />
+            <img src="/IMG/sus-tain.png" />
           </div>
 
           <div className="sustain-text">
@@ -38,7 +38,7 @@ const Sustainability = () => {
       <section className="sustain-section reverse">
         <div className="sustain-grid">
           <div className="sustain-image">
-            <img src="/api/placeholder/500/400" alt="Sustainable Farming" />
+            <img src="/IMG/sustain-able.png" />
           </div>
 
           <div className="sustain-text">
@@ -62,7 +62,7 @@ const Sustainability = () => {
       <section className="sustain-section">
         <div className="sustain-grid">
           <div className="sustain-image">
-            <img src="/api/placeholder/500/400" alt="Community Impact" />
+            <img src="/IMG/sus-tainment.png" />
           </div>
 
           <div className="sustain-text">
