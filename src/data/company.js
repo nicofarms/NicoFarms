@@ -182,7 +182,7 @@ With a keen eye for detail and a practical approach to financial management, she
     image: financeImage,
   },
   {
-    name: "Dr. Adewole Saidi Abiola",
+    name: "Adewole Saidi Abiola",
     role: "Nutritionist & Farm Consultant",
     bio: "Dr. Adewole Saidi Abiola is a poultry veterinary specialist and farm consultant with a strong focus on animal health, nutrition and sustainable poultry production.",
     specialties: [

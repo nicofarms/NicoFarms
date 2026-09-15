@@ -41,26 +41,6 @@ const Team = () => {
 
   return (
     <main className="corporate-page">
-      <div className="corporate-shell filter-bar">
-        <div className="filter-list">
-          {filters.map((filter) => (
-            <button
-              key={filter.value}
-              className={
-                activeFilter === filter.value ? "filter active" : "filter"
-              }
-              onClick={() => setActiveFilter(filter.value)}
-              type="button"
-            >
-              {filter.label}
-            </button>
-          ))}
-        </div>
-        <div className="active-status">
-          <span /> {allStaff.length} professionals in our team
-        </div>
-      </div>
-
       <section className="corporate-shell section-block">
         <div className="section-intro">
           <div>
@@ -202,7 +182,7 @@ const Team = () => {
             <img src={selectedMember.image} alt={selectedMember.name} />
             <div className="dialog-content">
               <div className="eyebrow">{selectedMember.role}</div>
-              <h2 style={{ color: "red" }}>{selectedMember.name}</h2>
+              <h2 style={{ color: "black" }}>{selectedMember.name}</h2>
               <p>{selectedMember.about || selectedMember.bio}</p>
               <div className="dialog-tags">
                 {selectedMember.specialties?.map((specialty) => (
