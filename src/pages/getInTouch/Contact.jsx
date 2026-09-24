@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./contact.css"
+import "./contact.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -24,17 +24,16 @@ const Contact = () => {
 
   return (
     <main className="contact">
-
       {/* HEADER */}
       <section className="contact-header">
         <h1>Get in Touch</h1>
         <p>
-          Contact us for fresh eggs, poultry supply, or partnership opportunities
+          Contact us for fresh eggs, poultry supply, or partnership
+          opportunities
         </p>
       </section>
 
       <div className="contact-container">
-
         {/* FORM */}
         <section className="contact-form-section">
           <h2>Send us a Message</h2>
@@ -98,7 +97,8 @@ const Contact = () => {
           <div className="info-card">
             <h3>Farm Location</h3>
             <p>
-              Nico Farms Crescent, Ejila, Ado-Odo/Ota, Ogun Sta<br />
+              Nico Farms Crescent, Ejila, Ado-Odo/Ota, Ogun Sta
+              <br />
               Serving Ojo to Badagry (Lagos)
             </p>
           </div>
@@ -116,7 +116,7 @@ const Contact = () => {
             <h3>Business Enquiries</h3>
             <p>
               📧 info@nicofarms.com <br />
-              📞 +234 xxx xxx xxxx
+              📞 +234 803 040 5307
             </p>
           </div>
 
@@ -147,7 +147,6 @@ const Contact = () => {
           <div className="area">🏪 Retailers & Vendors</div>
         </div>
       </section>
-
     </main>
   );
 };

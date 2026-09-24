@@ -58,12 +58,12 @@ function Home() {
           <div className="con-text">
             <p>
               Founded in 2020, Nico Farms is committed to responsible poultry
-              farming with a focus on quality products and animal welfare. We 
-              believe in the power of farming done right, where the welfare of 
-              our animals, members of staffs, and the quality of our products 
-              always come first.
+              farming with a focus on quality products, human and animal
+              welfare. We believe in the power of farming done right, where the
+              welfare of our animals, members of staffs, and the quality of our
+              products always come first.
             </p>
-            <button className="learn-butt">Learn more</button>
+            <button className="learn-butt" onClick={()=> navigate("/about")}>Learn more</button>
           </div>
           <div className="con-img">
             <img src={img[plus]} alt="" />
@@ -94,9 +94,9 @@ function Home() {
             <img src="/IMG/About-2.jpg" alt="Eggs" />
             <h3>Fresh Eggs</h3>
             <p>
-              Our fresh eggs are produced daily under hygienic conditions, 
-              ensuring high nutritional value and great taste for both households
-              and commercial use.
+              Our fresh eggs are produced daily under hygienic conditions,
+              ensuring high nutritional value and great taste for both
+              households and commercial use.
             </p>
             <button onClick={() => navigate("/products")}>View Product</button>
           </div>
@@ -151,5 +151,3 @@ function Home() {
 }
 
 export default Home;
-
-
