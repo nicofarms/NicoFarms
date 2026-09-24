@@ -122,8 +122,8 @@ const About = () => {
             power of farming done right. Founded in 2020 by Kenneth Geoffrey in
             consultation with his long-time friend and partner Raji Bomodeoku,
             Nico Farms' journey began with a simple but powerful vision: to
-            cultivate a farm where the welfare of our animals and the quality of
-            our products always come first.
+            cultivate a farm where the welfare of our animals, members of staff,
+            and the quality of our products come first.
           </p>
           <p>
             What started as a social project meant to contribute to the
@@ -159,11 +159,11 @@ const About = () => {
         <div className="about-text">
           <h2>Our Vision</h2>
           <p>
-            To cultivate a farm where the welfare of our animals and the quality
-            of our products always come first. To strengthen our distribution
-            and minimize the cost of farm operations through feed production,
-            business expansion, and sales of poultry meat and eggs across
-            regions in Nigeria.
+            To cultivate a farm where the welfare of our animals, members of
+            staff, and the quality of our products come first. To strengthen our
+            distribution and minimize the cost of farm operations through feed
+            production, business expansion, and sales of poultry meat and eggs
+            across regions in Nigeria.
           </p>
         </div>
       </div>
