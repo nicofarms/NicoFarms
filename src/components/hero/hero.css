@@ -1,155 +1,131 @@
 .herobg {
-  width: 100%;
-  height: 85vh;
-  background-image: url(../../assets/images/HEROPAGE.jpg);
-  background-position: center;
-  background-size: cover;
   position: relative;
+  display: flex;
+  min-height: min(720px, calc(100svh - 90px));
+  align-items: center;
+  overflow: hidden;
+  padding: 80px 24px;
+  background: url("../../assets/images/HEROPAGE.jpg") center/cover no-repeat;
+  color: #fff;
 }
 
 .hero-overlay {
-  width: 100%;
-  height: 85vh;
-  background: rgba(31, 77, 43, 0.144);
   position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(5, 35, 17, 0.82), rgba(5, 35, 17, 0.38) 62%, rgba(5, 35, 17, 0.12)),
+    linear-gradient(0deg, rgba(5, 35, 17, 0.25), transparent 55%);
   pointer-events: none;
 }
 
 .hero-text {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  h1 {
-    width: 100%;
-    height: 30%;
-    color: white;
-    line-height: normal;
-    text-align: left;
-    margin-left: 20px;
-    z-index: 1;
-  }
-
-  .buttons {
-    width: 100%;
-    display: flex;
-    margin-left: 20px;
-    gap: 20px;
-
-    .butt-tag {
-      padding: 12px 28px;
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      background-color: #fda304;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      transition: all 350ms ease;
-    }
-
-    .butt-tag:hover {
-      background-color: #e59400;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .butt-secondary {
-      padding: 12px 28px;
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      background-color: transparent;
-      color: white;
-      border: 2px solid white;
-      border-radius: 6px;
-      transition: all 0.3s ease;
-    }
-
-    .butt-secondary:hover {
-      background-color: white;
-      color: #1f4d2b;
-    }
-  }
+  position: relative;
+  z-index: 1;
+  width: min(1200px, 100%);
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 480px) {
+.hero-eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #b5d2b7;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.hero-text h1 {
+  max-width: 760px;
+  margin: 0 0 18px;
+  color: #fff;
+  font-family: "Plus Jakarta Sans", Inter, Arial, sans-serif;
+  font-size: clamp(38px, 5.5vw, 66px);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.06;
+}
+
+.hero-text > p {
+  max-width: 620px;
+  margin: 0;
+  color: #e0e9e1;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.hero-text .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.hero-text .buttons button {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  cursor: pointer;
+  font: 700 13px "Plus Jakarta Sans", Inter, Arial, sans-serif;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-text .butt-tag {
+  background: #fff;
+  color: #0e3e1e;
+}
+
+.hero-text .butt-tag:hover {
+  transform: translateY(-2px);
+  background: #eaf2e9;
+}
+
+.hero-text .butt-secondary {
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.hero-text .butt-secondary:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.hero-text .buttons button:focus-visible {
+  outline: 3px solid #f2bd54;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
   .herobg {
-  width: 100%;
-  height: 85vh;
-  background-image: url(../../assets/images/HEROPAGE.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-overlay {
-  width: 100%;
-  height: 85vh;
-  background: rgba(31, 77, 43, 0.144);
-  position: absolute;
-  pointer-events: none;
-}
-
-.hero-text {
-  width: 85%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  h1 {
-    width: 100%;
-    height: 30%;
-    color: white;
-    line-height: normal;
-    text-align: left;
-    margin-left: 20px;
-    z-index: 1;
+    min-height: min(640px, calc(100svh - 90px));
+    padding: 60px 20px;
+    background-position: 58% center;
   }
 
-  .buttons {
-    width: 100%;
-    display: flex;
-    margin-left: 20px;
-    gap: 20px;
+  .hero-overlay {
+    background: linear-gradient(90deg, rgba(5, 35, 17, 0.8), rgba(5, 35, 17, 0.38));
+  }
 
-    .butt-tag {
-      padding: 8px 18px;
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      background-color: #fda304;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      transition: all 350ms ease;
-    }
+  .hero-eyebrow {
+    font-size: 10px;
+  }
 
-    .butt-tag:hover {
-      background-color: #e59400;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    }
+  .hero-text h1 {
+    font-size: clamp(36px, 9vw, 48px);
+  }
 
-    .butt-secondary {
-      padding: 8px 18px;
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      background-color: transparent;
-      color: white;
-      border: 2px solid white;
-      border-radius: 6px;
-      transition: all 0.3s ease;
-    }
-
-    .butt-secondary:hover {
-      background-color: white;
-      color: #1f4d2b;
-    }
+  .hero-text > p {
+    font-size: 15px;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-text .buttons button {
+    transition: none;
+  }
 }

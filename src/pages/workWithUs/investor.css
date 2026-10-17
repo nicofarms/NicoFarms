@@ -1,163 +1,453 @@
-/* PAGE */
 .investors {
-  background: linear-gradient(to bottom, #fefce8, #ffffff);
-  padding: 60px 20px;
+  --investor-green: #0e3e1e;
+  --investor-deep: #052b15;
+  --investor-ink: #15221a;
+  --investor-muted: #59675e;
+  --investor-line: #e1e9e2;
+  background: #fafbf9;
+  color: var(--investor-ink);
+  font-family: Inter, Arial, sans-serif;
+  text-align: left;
 }
 
-/* HEADER */
-.investors-header {
-  text-align: center;
-  margin-bottom: 60px;
+.investors *,
+.investors *::before,
+.investors *::after {
+  box-sizing: border-box;
 }
 
-.investors-header h1 {
-  font-size: 40px;
-  color: #1f4d2b;
+.investor-shell {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
 }
 
-.investors-header p {
-  color: #666;
-  margin-top: 10px;
-}
-
-/* SECTION */
-.invest-section {
-  margin-bottom: 60px;
-}
-
-/* TITLE */
-.section-title {
-  text-align: center;
-  font-size: 30px;
-  color: #1f4d2b;
-  margin-bottom: 40px;
-}
-
-/* GRID */
-.invest-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-}
-
-.invest-grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-}
-
-/* CARD */
-.invest-card {
-  background: #f0fdf4;
-  padding: 25px;
-  border-radius: 15px;
-  transition: 0.3s;
-}
-
-.invest-card:hover {
-  transform: translateY(-5px);
-}
-
-.invest-card h3 {
-  color: #1f4d2b;
-  margin-bottom: 10px;
-}
-
-.invest-card p {
-  color: #555;
-}
-
-.invest-card.center {
-  text-align: center;
-  background: #fff;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-/* BUTTON */
-.invest-card button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #1f4d2b;
+.investor-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 35%, rgba(100, 161, 97, 0.2), transparent 28%),
+    linear-gradient(120deg, var(--investor-deep), var(--investor-green));
   color: #fff;
-  border: none;
-  border-radius: 8px;
+}
+
+.investor-hero::after {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(213, 236, 212, 0.2) 1px, transparent 1px);
+  background-size: 28px 28px;
+  content: "";
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.investor-hero-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+  align-items: center;
+  gap: 64px;
+  min-height: 390px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.investor-hero-copy {
+  max-width: 720px;
+}
+
+.investor-eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #7ead85;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.investor-hero h1 {
+  margin: 0 0 18px;
+  color: #fff;
+  font-family: "Plus Jakarta Sans", Inter, Arial, sans-serif;
+  font-size: clamp(38px, 5vw, 58px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+}
+
+.investor-hero-copy > p {
+  max-width: 650px;
+  margin: 0 0 28px;
+  color: #d0dfd2;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.investor-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 48px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 7px;
+  background: #fff;
+  color: var(--investor-green);
   cursor: pointer;
+  font: 700 13px "Plus Jakarta Sans", Inter, Arial, sans-serif;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.invest-card button:hover {
-  background: #16381f;
+.investor-primary-button:hover {
+  transform: translateY(-2px);
+  background: #eaf2e9;
 }
 
-/* FLEX SECTION */
-.invest-flex {
+.investor-primary-button:focus-visible,
+.partnership-card button:focus-visible {
+  outline: 3px solid #f2bd54;
+  outline-offset: 3px;
+}
+
+.investor-foundation {
+  padding: 28px;
+  border: 1px solid rgba(219, 238, 218, 0.2);
+  border-radius: 12px;
+  background: rgba(0, 24, 9, 0.28);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+.foundation-label,
+.foundation-footnote {
+  display: block;
+  color: #b8d3bb;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.foundation-label {
+  margin-bottom: 12px;
+}
+
+.investor-foundation strong {
+  display: block;
+  color: #fff;
+  font: 700 48px/1.1 "Plus Jakarta Sans", Inter, Arial, sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.investor-foundation p {
+  margin-top: 12px;
+  color: #d0dfd2;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.foundation-divider {
+  display: block;
+  height: 1px;
+  margin: 22px 0 16px;
+  background: rgba(219, 238, 218, 0.22);
+}
+
+.foundation-footnote {
+  color: #8eb596;
+  font-size: 10px;
+}
+
+.investor-section {
+  padding-top: 68px;
+  padding-bottom: 68px;
+}
+
+.investor-section-heading {
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+.investor-section-heading .investor-eyebrow,
+.investor-cta .investor-eyebrow {
+  margin-bottom: 8px;
+  color: #8a641f;
+}
+
+.investor-section-heading h2,
+.investor-cta h2 {
+  margin: 0;
+  color: var(--investor-ink);
+  font: 700 clamp(27px, 3vw, 36px)/1.2 "Plus Jakarta Sans", Inter, Arial, sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.investor-section-heading > p {
+  margin-top: 12px;
+  color: var(--investor-muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.investment-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.investment-card {
+  min-height: 205px;
+  padding: 22px;
+  border: 1px solid var(--investor-line);
+  border-radius: 10px;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.investment-card:hover,
+.partnership-card:hover {
+  transform: translateY(-3px);
+  border-color: #b9d0bc;
+  box-shadow: 0 12px 28px rgba(14, 62, 30, 0.08);
+}
+
+.investment-number,
+.partnership-number {
+  color: #9b762d;
+  font: 700 11px "Plus Jakarta Sans", Inter, Arial, sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.investment-card h3,
+.partnership-card h3,
+.growth-stage h3 {
+  margin: 24px 0 8px;
+  color: var(--investor-green);
+  font: 700 17px/1.35 "Plus Jakarta Sans", Inter, Arial, sans-serif;
+}
+
+.investment-card p,
+.partnership-card p,
+.growth-stage p {
+  margin: 0;
+  color: var(--investor-muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.investor-roadmap-section {
+  background: #f0f4ef;
+}
+
+.growth-roadmap {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  margin: 42px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.growth-roadmap::before {
+  position: absolute;
+  top: 21px;
+  right: 12.5%;
+  left: 12.5%;
+  height: 1px;
+  background: #c4d5c6;
+  content: "";
+}
+
+.growth-stage {
+  position: relative;
+  padding: 0 22px;
+}
+
+.growth-stage-number {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid #b9cdbb;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--investor-green);
+  font: 700 11px "Plus Jakarta Sans", Inter, Arial, sans-serif;
+}
+
+.growth-stage h3 {
+  margin-top: 18px;
+}
+
+.investor-partnerships {
+  padding-top: 68px;
+  padding-bottom: 42px;
+}
+
+.partnership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.partnership-card {
+  display: flex;
+  min-height: 245px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  border: 1px solid var(--investor-line);
+  border-radius: 10px;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.partnership-card h3 {
+  margin-top: 18px;
+}
+
+.partnership-card button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding: 20px 0 0;
+  border: 0;
+  background: transparent;
+  color: var(--investor-green);
+  cursor: pointer;
+  font: 700 12px "Plus Jakarta Sans", Inter, Arial, sans-serif;
+}
+
+.investor-cta {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 68px;
+  padding: 34px 38px;
+  border-radius: 12px;
+  background: #eaf1e9;
 }
 
-.invest-image {
-  width: 40%;
+.investor-cta h2 {
+  max-width: 640px;
+  font-size: clamp(24px, 3vw, 32px);
 }
 
-.invest-image img {
-  width: 100%;
-  height: 300px;
-  border-radius: 15px;
+.investor-cta p {
+  margin-top: 10px;
+  color: var(--investor-muted);
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-.invest-text h2 {
-  color: #1f4d2b;
-  margin-bottom: 15px;
-}
-
-.invest-text ul {
-  list-style: none;
-  padding: 0;
-}
-
-.invest-text li {
-  margin-bottom: 12px;
-  color: #555;
-}
-
-/* CTA */
-.invest-cta {
-  background: #276b39;
+.investor-cta .investor-primary-button {
+  flex-shrink: 0;
+  background: var(--investor-green);
   color: #fff;
-  text-align: center;
-  padding: 60px;
-  border-radius: 20px;
 }
 
-.invest-cta h2 {
-  margin-bottom: 15px;
+.investor-cta .investor-primary-button:hover {
+  background: #14532d;
 }
 
-.invest-cta p {
-  margin-bottom: 20px;
+@media (max-width: 900px) {
+  .investment-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .investor-hero-content {
+    grid-template-columns: minmax(0, 1fr) 250px;
+    gap: 32px;
+  }
 }
 
-.invest-cta button {
-  padding: 12px 25px;
-  background: #fff;
-  color: #1f4d2b;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
+@media (max-width: 700px) {
+  .investor-shell {
+    width: min(100% - 32px, 1200px);
+  }
 
-.invest-cta button:hover {
-  background: #f3f3f3;
-}
+  .investor-hero-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .invest-grid,
-  .invest-grid-3 {
+  .investor-foundation {
+    max-width: 360px;
+  }
+
+  .investor-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .growth-roadmap {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 30px;
+  }
+
+  .growth-roadmap::before {
+    top: 21px;
+    bottom: 21px;
+    left: 20px;
+    width: 1px;
+    height: auto;
+  }
+
+  .growth-stage {
+    min-height: 124px;
+    padding: 0 0 26px 58px;
+  }
+
+  .growth-stage-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .growth-stage h3 {
+    margin: 2px 0 7px;
+  }
+
+  .partnership-grid {
     grid-template-columns: 1fr;
   }
 
-  .invest-flex {
+  .partnership-card {
+    min-height: 210px;
+  }
+
+  .investor-cta {
+    align-items: flex-start;
     flex-direction: column;
+    margin-bottom: 48px;
+    padding: 28px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .investment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .investment-card {
+    min-height: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .investment-card,
+  .partnership-card,
+  .investor-primary-button {
+    transition: none;
   }
 }

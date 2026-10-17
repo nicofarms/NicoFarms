@@ -73,20 +73,25 @@ const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="herobg">
-      <div className="hero-overlay"></div>
+    <section className="herobg">
+      <div className="hero-overlay" aria-hidden="true"></div>
       <div className="hero-text">
-        <h1>Farm Fresh Eggs & Quality Poultry You Can Trust</h1>
+        <span className="hero-eyebrow">Nico AgriFarms Limited · Est. 2020</span>
+        <h1>Farm fresh eggs and quality poultry you can trust.</h1>
+        <p>
+          Raised with care. Produced responsibly. Serving homes and businesses
+          across our communities.
+        </p>
         <div className="buttons">
-          <button className="butt-tag" onClick={() => navigate("/products")}>
+          <button className="butt-tag" onClick={() => navigate("/products")} type="button">
             View Products
           </button>
-          <button className="butt-secondary" onClick={() => navigate("/contact")}>
+          <button className="butt-secondary" onClick={() => navigate("/contact")} type="button">
             Contact Us
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

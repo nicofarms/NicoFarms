@@ -3,40 +3,10 @@ import { consultants, team } from "../../data/company";
 import "./team.css";
 import { useNavigate } from "react-router-dom";
 
-const filters = [
-  { label: "All Leadership", value: "all" },
-  { label: "Executive", value: "executive" },
-  { label: "Operations", value: "operations" },
-  { label: "Advisory", value: "advisory" },
-];
-
-const getAdvisoryIcon = (role = "") => {
-  const value = role.toLowerCase();
-  if (value.includes("legal") || value.includes("complian")) return "policy";
-  if (value.includes("financ") || value.includes("account"))
-    return "account_balance";
-  if (value.includes("agro") || value.includes("nutrition"))
-    return "agriculture";
-  return "workspace_premium";
-};
-
-const getCategory = (member) => {
-  const role = member.role.toLowerCase();
-  if (role.includes("founder") || role.includes("managing director"))
-    return "executive";
-  if (role.includes("manager") || role.includes("nutrition"))
-    return "operations";
-  return "advisory";
-};
-
 const Team = () => {
   const [selectedMember, setSelectedMember] = useState(null);
-  const [activeFilter, setActiveFilter] = useState("all");
   const allStaff = useMemo(() => [...team, ...consultants], []);
   const featuredMember = allStaff[0];
-  const visibleStaff = allStaff.filter(
-    (member) => activeFilter === "all" || getCategory(member) === activeFilter,
-  );
   const navigate = useNavigate();
 
   return (
@@ -103,13 +73,15 @@ const Team = () => {
         </article>
 
         <div className="staff-grid">
-          {visibleStaff
+          {allStaff
             .filter((member) => member !== featuredMember)
             .map((member) => (
               <article className="staff-card" key={member.name}>
                 <div
                   className={`staff-image ${
-                    member.name.startsWith("Chinaza") ? "finance-image"
+                    member.name.startsWith("Blessing") ? "blessing-image"
+                    : member.name.startsWith("Ngozi") ? "ngozi-image"
+                    : member.name.startsWith("Chinaza") ? "finance-image"
                     : member.name.startsWith("Opeyemi") ? "manager-image"
                     : ""
                   }`}
