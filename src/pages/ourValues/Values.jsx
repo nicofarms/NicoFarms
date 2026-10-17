@@ -36,34 +36,48 @@ const Values = () => {
       title: "People & Staff Welfare",
       description:
         "We value the people behind our operations and are committed to creating a safe, respectful, and supportive working environment that promotes staff well-being, growth, and productivity.",
-      icon: "🏘️",
+      icon: "👨‍👩‍👧",
     },
   ];
 
   return (
     <main className="values">
-      {/* HEADER */}
-      <section className="values-header">
-        <h1>Our Values</h1>
-        <p>The principles that guide everything we do at Nico Farms</p>
+      <section className="values-hero">
+        <div className="values-shell">
+          <span className="values-eyebrow">What guides us</span>
+          <h1>Our values</h1>
+          <p>
+            The principles behind how we care for our animals, serve our
+            communities, and grow Nico Farms.
+          </p>
+        </div>
       </section>
 
-      {/* VALUES GRID */}
-      <section className="values-container">
+      <section className="values-shell values-content">
+        <div className="values-section-heading">
+          <span className="values-eyebrow">Our commitments</span>
+          <h2>Principles in practice</h2>
+          <p>
+            These commitments shape the standards we bring to our work every
+            day.
+          </p>
+        </div>
         <div className="values-grid">
-          {values.map((value, index) => (
-            <div key={index} className="value-card">
-              <div className="value-icon">{value.icon}</div>
+          {values.map((value) => (
+            <article key={value.title} className="value-card">
+              <div className="value-icon" aria-hidden="true">{value.icon}</div>
               <h3>{value.title}</h3>
               <p>{value.description}</p>
-            </div>
+            </article>
           ))}
         </div>
       </section>
 
-      {/* COMMITMENT */}
-      <section className="values-commitment">
-        <h2>Our Commitment</h2>
+      <section className="values-shell values-commitment">
+        <div>
+          <span className="values-eyebrow">Our promise</span>
+          <h2>Commitment in every decision</h2>
+        </div>
         <p>
           At Nico Farms, our values are not just words – they are the foundation
           of our daily operations. We believe that by upholding these
