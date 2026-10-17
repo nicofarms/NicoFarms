@@ -9,3 +9,8 @@
 .filter-bar,.filter-list{flex-wrap:wrap}
 .filter{white-space:normal}
 
+.featured-image,.staff-image{overflow:hidden}
+.featured-image img,.staff-image img{transition:transform .35s ease}
+.featured-image:hover img,.staff-image:hover img{transform:scale(1.1)}
+.founder-image img{transform:scale(1.2)}
+.founder-image:hover img{transform:scale(1.28)}
