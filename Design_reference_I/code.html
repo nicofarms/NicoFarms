@@ -1,0 +1,652 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#becabb","on-surface-variant":"#414941","surface-dim":"#d0decf","surface-container-low":"#e9f7e8","on-tertiary-fixed-variant":"#703800","surface-container-highest":"#d8e6d7","surface-container":"#e4f2e2","inverse-primary":"#a0d3a5","primary":"#154423","inverse-on-surface":"#e6f5e5","on-background":"#131e15","on-tertiary-fixed":"#301400","on-error":"#ffffff","surface-tint":"#3a6843","primary-container":"#2e5c38","error":"#ba1a1a","tertiary-container":"#814200","outline":"#717970","surface-variant":"#d8e6d7","surface-container-high":"#deecdd","on-primary-fixed":"#00210a","secondary":"#566156","background":"#effdee","secondary-container":"#d7e3d4","on-surface":"#131e15","secondary-fixed":"#dae6d7","on-primary-fixed-variant":"#22502d","on-secondary-fixed-variant":"#3f4a3f","on-primary-container":"#a0d3a5","on-secondary-fixed":"#141e15","surface-bright":"#effdee","tertiary-fixed":"#ffdcc5","error-container":"#ffdad6","tertiary-fixed-dim":"#ffb781","surface-container-lowest":"#ffffff","outline-variant":"#c1c9be","primary-fixed":"#bbefc0","inverse-surface":"#273329","on-secondary-container":"#5a665a","on-tertiary":"#ffffff","surface":"#effdee","on-tertiary-container":"#ffb782","on-error-container":"#93000a","primary-fixed-dim":"#a0d3a5","on-primary":"#ffffff","tertiary":"#5f2f00","on-secondary":"#ffffff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","gutter-mobile":"1rem","space-xl":"2.5rem","space-lg":"1.5rem","space-xs":"0.25rem","margin":"2rem","gutter":"1.5rem","space-sm":"0.5rem","margin-mobile":"1rem"},"fontFamily":{"headline-xl":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl-mobile":["Inter"],"label-lg":["Inter"],"headline-md":["Inter"],"body-lg":["Inter"],"headline-lg":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"body-md":["Inter"]},"fontSize":{"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(36,48,38,0.04)]"><div class="h-16 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Nico Farms Logo" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X5omJiLdmVLIotrkm_1ICU3foaJihksgBQgZAqB33hmPzIdE_yoMxBVR72nq6jGygeTgTQqnt3NuwhjN8X0Y1zZrhIywXt88FmvS1Aluzts2HhJ-c9wFGYBYoqitauVYgfZzleh06FeM4oQx1P3Ep3FRo0ZrMnOmAR71mMP-lTrW73doetcTut5-4_6CbhzSqQjMlzNdve2hsa4KcTsOH7I7ptZGFLD3FJ-hxcQhQSbzFeZ0TKKnhx-gA"><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-lg bg-secondary-container text-on-secondary-container font-semibold uppercase tracking-wider">Admin</span></div><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="bg-secondary-container text-on-secondary-container font-medium rounded-lg"><a aria-current="page" class="px-space-md py-space-sm transition-colors duration-150 bg-secondary-container text-on-secondary-container font-medium rounded-lg" data-path="team-management" href="#">Team Management</a><a class="px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors duration-150" data-path="about-farm-video" href="#">About Farm Video</a><a class="px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors duration-150" data-path="contact-submissions" href="#">Contact Submissions</a></nav></div><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-150" href="https://nicofarms.com" rel="noopener noreferrer" target="_blank"><span class="font-body-md text-body-md">nicofarms.com</span><span class="material-symbols-outlined text-[16px]">open_in_new</span></a><div class="h-4 w-[1px] bg-outline-variant hidden sm:block"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full max-w-7xl mx-auto px-margin pt-16 flex-1 bg-surface"><div class="flex flex-col w-full py-space-lg space-y-space-xl">
+<!-- Top Meta & Quick Telemetry Ribbon -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Directory Hub</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live on nicofarms.com/team</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-semibold">Team Members</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        Manage team member profiles, roles, and photos displayed on nicofarms.com/team. Changes reflect directly across active customer portals.
+      </p>
+</div>
+<!-- Action Group -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm bg-primary text-on-primary rounded-xl font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-all active:scale-[0.98]" id="open-modal-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span class="">Add Team Member</span>
+</button>
+</div>
+</div>
+<!-- Domain Telemetry / Status Pill Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Published Staff</span>
+<span class="material-symbols-outlined text-[18px] text-primary">groups</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold" id="stat-active-count">5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">profiles</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">100% synchronized</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Soil &amp; Operations</span>
+<span class="material-symbols-outlined text-[18px] text-primary">eco</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold">3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">field leads</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Agronomy &amp; livestock</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Leadership &amp; Lab</span>
+<span class="material-symbols-outlined text-[18px] text-primary">science</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">executive</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Founding management</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Display Priority</span>
+<span class="material-symbols-outlined text-[18px] text-primary">swap_vert</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold">Custom</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">order</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Auto-sorted by rank</span>
+</div>
+</div>
+</div>
+<!-- Filter & Search Toolbar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="relative w-full sm:w-80">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md placeholder:text-on-surface-variant/60 focus:outline-none focus:bg-surface-container-lowest transition-all" id="search-input" placeholder="Search by name, role, or bio..." type="text">
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto justify-end">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mr-1">Filter:</span>
+<button class="px-space-sm py-1 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-lg font-semibold">All (5)</button>
+<button class="px-space-sm py-1 text-on-surface-variant hover:bg-surface-container-high rounded-lg font-label-sm text-label-sm transition-colors">Active (5)</button>
+<button class="px-space-sm py-1 text-on-surface-variant hover:bg-surface-container-high rounded-lg font-label-sm text-label-sm transition-colors">Drafts (0)</button>
+</div>
+</div>
+<!-- Team Members Table Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse" id="team-table">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md font-semibold w-16 text-center">Rank</th>
+<th class="py-space-sm px-space-md font-semibold">Member</th>
+<th class="py-space-sm px-space-md font-semibold hidden md:table-cell">Role &amp; Bio Summary</th>
+<th class="py-space-sm px-space-md font-semibold w-28">Status</th>
+<th class="py-space-sm px-space-md font-semibold text-right w-36">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0" id="team-tbody">
+<!-- Member 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">1</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<img class="w-12 h-12 rounded-xl object-cover bg-surface-variant flex-shrink-0" data-alt="Close up photographic headshot of Nicolas Vance, middle-aged male regenerative farmer with gentle eyes and sun-weathered smile, wearing a simple linen work shirt in lush organic agricultural field under soft morning daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY_lEFXKZt4IZ0hIvzBx27vGNMy4ov0_aBdZkxF94czF2owq5jbeXjvZ7DokJhjK2vBCyoDmZQjR6MXs0WoJDwHcTR-4NYvEm31t7h-cZ_w71Nb03llveT64YEsHMn7pVXMM_PtSjCtVBJbd5AtuTAd5xcItlk9bU5fBt0xUdpDhltXhmXDuKO1FH63GknJ_EFLH1p4s5pw-sFdeY0nWPodYiqbYGSDAtlNYitCuFSGUd42to3KKTm">
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold member-name">Nicolas Vance</div>
+<div class="font-label-md text-label-md text-primary font-medium member-role md:hidden">Master Grower &amp; Founder</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-xs md:hidden">Pioneered biodynamic no-till soil regeneration practices...</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md hidden md:table-cell">
+<div class="font-label-lg text-label-lg text-primary font-semibold member-role">Master Grower &amp; Founder</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 max-w-md member-bio">
+                Pioneered biodynamic no-till soil regeneration practices at Nico Farms, overseeing broadacre fruit and greenhouse vegetable production.
+              </p>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Active
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="edit-btn p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Edit Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="delete-btn p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-colors" title="Delete Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Member 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">2</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<img class="w-12 h-12 rounded-xl object-cover bg-surface-variant flex-shrink-0" data-alt="Portrait of Maria Santos, female agronomist with warm friendly expression, hair neatly tied back, holding a soil moisture telemetry tablet in a modern organic high-tunnel tomato farm under diffuse clean ambient greenhouse illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYbHJvrb7ZMDKFwZwBuvG78OB7-7RaHI4RDdMwG_FDiaNtInIpXuSmMcnR_tvi7PrOSDivBD_78YOYS5b4vdA60YrfGgVcsUoDH39DuurHoUD3kUy1twLnyOqh4wXci-ASC0NoNNdA2hxEjZMnZRFfnw0Vc-P1o3j_pMifAffm7BXGe-ZZYM7gQ_VJlpf9FEZxE1Qr0iBNKzyEiG_hXO2vZthTULqFouE_3it4cN3kjdK8VKxao8ae">
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold member-name">Maria Santos</div>
+<div class="font-label-md text-label-md text-primary font-medium member-role md:hidden">Livestock &amp; Soil Specialist</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-xs md:hidden">Specializes in holistic rotational grazing and micro-biome soil testing...</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md hidden md:table-cell">
+<div class="font-label-lg text-label-lg text-primary font-semibold member-role">Livestock &amp; Soil Specialist</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 max-w-md member-bio">
+                Specializes in holistic rotational pasture grazing and biological micro-biome soil testing across the northern farm acreage.
+              </p>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Active
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="edit-btn p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Edit Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="delete-btn p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-colors" title="Delete Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Member 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">3</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<img class="w-12 h-12 rounded-xl object-cover bg-surface-variant flex-shrink-0" data-alt="Portrait of David Chen, professional Asian male agricultural operations director in deep green canvas vest standing beside wooden heirloom produce crates in a naturally lit farm packhouse." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC21hqxVQCsvrIi7j7edTLgDdTRHpniiODKNpd0qSpwFBnnqLHWJT6MA8U3sPKlQwBiaal9lpmvguJ34yhTwshIYMvl8PmUe-w-YABD2G8neAIl1W207HUOQ-5Kc3k1gEh_klRGvqH8bQbnfxTU8dHF33t-WEe9saelTv6Nrql4qyXd-MkyUH64axVcAPBUE2e-GL-AabJvOf3Y4G6f7UVJaTVX9V_EbSfO5Fi56JUo8Zxlqi3VTi52">
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold member-name">David Chen</div>
+<div class="font-label-md text-label-md text-primary font-medium member-role md:hidden">Head of Farm Operations</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-xs md:hidden">Manages harvest logistics, CSA packing schedules, and cold chain distribution...</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md hidden md:table-cell">
+<div class="font-label-lg text-label-lg text-primary font-semibold member-role">Head of Farm Operations</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 max-w-md member-bio">
+                Manages daily harvest logistics, packaging schedules, and direct-to-chef distribution networks for regional restaurants.
+              </p>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Active
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="edit-btn p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Edit Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="delete-btn p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-colors" title="Delete Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Member 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">4</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<img class="w-12 h-12 rounded-xl object-cover bg-surface-variant flex-shrink-0" data-alt="Portrait of Elena Rostova, thoughtful female horticulturist examining fresh organic culinary herbs in a sunlit propagation nursery with earthen planting trays and rustic garden glasshouse." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcbbConoLzR2qnQ8Kz6Nx3vqr7SZRzfrayWTexZienXdTzg0WJtE_pljzaGFpAQrHaJYBGQKf_H0V9DNRT9vqAhEuvi6_GdBzRXVVG_JpPIdTLPulA3HXOjC-zq72HmfaJkW_pdBGNJpyRb1RhmdVgngLllY-cHa8HiwwtP70AtNaYk9zWJpFLxq1DPHLsJJXRWlqCkwRAjjo45xS8d0AeBCnlT-jxDwGR1O9GaGFETB-gGP4v_uAP">
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold member-name">Elena Rostova</div>
+<div class="font-label-md text-label-md text-primary font-medium member-role md:hidden">Nursery &amp; Seed Lead</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-xs md:hidden">Curator of heritage seed bank and coordinator of organic seedling germination...</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md hidden md:table-cell">
+<div class="font-label-lg text-label-lg text-primary font-semibold member-role">Nursery &amp; Seed Lead</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 max-w-md member-bio">
+                Curator of our heritage seed bank and coordinator of organic seedling germination throughout all season rotations.
+              </p>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Active
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="edit-btn p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Edit Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="delete-btn p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-colors" title="Delete Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Member 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">5</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<img class="w-12 h-12 rounded-xl object-cover bg-surface-variant flex-shrink-0" data-alt="Portrait of Julian Kalu, smiling young African apprentice farmer standing in an orchard of heritage apple trees during golden hour harvest time." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwytfuxbjKw9j0hSa-PI5AKFS6b-CdLjdd0dNrcmTP1zCnjPVKD84c-gMOstn3ebWVG5RlTBV1UaeFGpp6G_ialY5k9rNMx9PrAcBBPG4uiLPzM3SV6jTBcD4z_rZuakPuQiFbeqK65X9JNx-gFpFBtZ8WdUJ_qEUxrmEMOxf_nbKLdJWTLKDTJ5p1ZF0GowYX5bWtI25zhoJafEwBpMzFcd2Hb-iocMjjnQpInb_SBszzaMfJUp07">
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold member-name">Julian Kalu</div>
+<div class="font-label-md text-label-md text-primary font-medium member-role md:hidden">Irrigation &amp; Orchard Steward</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-xs md:hidden">Directs micro-drip water conservation infrastructure and orchard care...</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md hidden md:table-cell">
+<div class="font-label-lg text-label-lg text-primary font-semibold member-role">Irrigation &amp; Orchard Steward</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 max-w-md member-bio">
+                Directs micro-drip solar water distribution infrastructure and natural pest companion planting in the orchards.
+              </p>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Active
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="edit-btn p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Edit Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="delete-btn p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-colors" title="Delete Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination Notice -->
+<div class="bg-surface-container-low px-space-md py-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span class="">All 5 active members currently visible to public visitors on nicofarms.com/team</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="">Order reflects front-end grid positioning</span>
+</div>
+</div>
+</div>
+<!-- Information Callout Card -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Live Web Preview Notice</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+          New profiles are staged to CDN cache within 60 seconds of saving. Ensure all photographic uploads are 1:1 aspect ratio for optimal layout alignment.
+        </p>
+</div>
+</div>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-lowest text-on-surface hover:text-primary rounded-xl font-label-lg text-label-lg transition-colors whitespace-nowrap shadow-sm" href="https://nicofarms.com/team" rel="noopener noreferrer" target="_blank">
+<span class="">Open Live Team Page</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+<!-- SLIDE-OVER / MODAL PANEL -->
+<div aria-labelledby="modal-title" aria-modal="true" class="fixed inset-0 z-50 overflow-hidden hidden" id="member-modal" role="dialog">
+<!-- Backdrop -->
+<div class="fixed inset-0 bg-on-background/40 backdrop-blur-sm transition-opacity opacity-0" id="modal-backdrop"></div>
+<div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+<div class="w-screen max-w-md bg-surface-container-lowest shadow-xl flex flex-col transform translate-x-full transition-transform duration-300 ease-out" id="modal-panel">
+<!-- Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">badge</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold" id="modal-title">Add Team Member</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Profile credentials for public website</p>
+</div>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" id="close-modal-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Form Body -->
+<form class="flex-1 overflow-y-auto p-space-lg space-y-space-md" id="member-form">
+<!-- Hidden edit index flag -->
+<input id="edit-index" type="hidden" value="-1">
+<!-- Profile Photo Upload -->
+<div class="space-y-space-xs">
+<label class="block font-label-md text-label-md text-on-surface font-semibold">Profile Photo</label>
+<div class="flex items-center gap-space-md">
+<!-- Avatar Preview Container -->
+<div class="w-20 h-20 rounded-xl bg-surface-container-high flex items-center justify-center overflow-hidden flex-shrink-0 relative group" id="avatar-preview-box">
+<img class="w-full h-full object-cover" data-alt="Default member placeholder headshot frame, crisp minimal green and warm ambient studio portrait." id="avatar-preview-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeYLSM_PQHrM2hb33sD69PouYfy1GtZvtTcAnKicXD9H3ElXdQWv3xtF9DUlEIXjWHX7mzzWvISXRumFmfd7YjDOd2-U3VjZ5_6ICN91Q5Zbpm6Vv4AbCFN-z1cDdSV6gW6KWNyzCziycOJi_GXf__YQ0k12UqdmrM2s6PpLA1B3jfSCfs1ZDiCHQXkkIe-qqiPM5tLxHZEj2vMjrC_zXsUVrdlZMWY_Nhpr-MGEPm5gj265bZSk0c">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+<span class="material-symbols-outlined text-on-primary text-[20px]">photo_camera</span>
+</div>
+</div>
+<!-- Upload Drag & Drop Area -->
+<div class="flex-1">
+<label class="flex flex-col items-center justify-center p-space-sm bg-surface-container-low hover:bg-surface-container rounded-xl cursor-pointer transition-colors text-center" for="photo-file">
+<span class="material-symbols-outlined text-primary text-[24px]">cloud_upload</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold mt-1">Click to upload</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SVG, PNG, or JPG (max 2MB)</span>
+<input accept="image/*" class="hidden" id="photo-file" type="file">
+</label>
+</div>
+</div>
+</div>
+<!-- Full Name -->
+<div class="space-y-space-xs">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="member-name-input">
+              Full Name <span class="text-error">*</span>
+</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md placeholder:text-on-surface-variant/50 focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="member-name-input" placeholder="e.g. Nicolas Vance, Maria Santos" required="" type="text">
+</div>
+<!-- Role / Title -->
+<div class="space-y-space-xs">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="member-role-input">
+              Role / Title <span class="text-error">*</span>
+</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md placeholder:text-on-surface-variant/50 focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="member-role-input" placeholder="e.g. Master Grower &amp; Founder" required="" type="text">
+</div>
+<!-- Bio / Short Description -->
+<div class="space-y-space-xs">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="member-bio-input">
+              Bio / Short Description
+            </label>
+<textarea class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md placeholder:text-on-surface-variant/50 focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary resize-none" id="member-bio-input" placeholder="Brief 1-2 sentence background highlighting farming practices, specialties, or responsibilities..." rows="3"></textarea>
+<span class="font-label-sm text-label-sm text-on-surface-variant block text-right">Recommended under 180 characters</span>
+</div>
+<!-- Display Order & Switch Row -->
+<div class="grid grid-cols-2 gap-space-md pt-space-xs">
+<!-- Priority Rank -->
+<div class="space-y-space-xs">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="member-order-input">Display Rank</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="member-order-input" max="99" min="1" type="number" value="1">
+</div>
+<!-- Active Toggle -->
+<div class="space-y-space-xs flex flex-col justify-end">
+<label class="block font-label-md text-label-md text-on-surface font-semibold">Public Status</label>
+<div class="flex items-center gap-space-sm h-10">
+<button aria-checked="true" class="w-12 h-6 bg-primary rounded-full p-0.5 transition-colors focus:outline-none relative" id="status-toggle-btn" role="switch" type="button">
+<span class="translate-x-6 block w-5 h-5 bg-on-primary rounded-full shadow-sm transform transition-transform" id="toggle-indicator"></span>
+</button>
+<span class="font-label-md text-label-md text-on-surface font-medium" id="toggle-label">Active</span>
+</div>
+</div>
+</div>
+<!-- Farm Department / Scope Tag -->
+<div class="space-y-space-xs pt-space-xs">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="member-dept-select">Department Tag</label>
+<select class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="member-dept-select">
+<option value="Agronomy &amp; Crops">Agronomy &amp; Crops</option>
+<option value="Livestock &amp; Pasture">Livestock &amp; Pasture</option>
+<option value="Operations &amp; Harvest">Operations &amp; Harvest</option>
+<option value="Nursery &amp; Greenhouse">Nursery &amp; Greenhouse</option>
+<option value="Executive Management">Executive Management</option>
+</select>
+</div>
+</form>
+<!-- Footer Actions -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-space-sm bg-surface-container-lowest text-on-surface hover:bg-surface-container rounded-xl font-label-lg text-label-lg transition-colors" id="cancel-modal-btn" type="button">
+            Cancel
+          </button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm bg-primary text-on-primary hover:bg-primary-container rounded-xl font-label-lg text-label-lg shadow-sm transition-all active:scale-[0.98]" id="save-member-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span class="">Save Member</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const modal = document.getElementById('member-modal');
+    const backdrop = document.getElementById('modal-backdrop');
+    const panel = document.getElementById('modal-panel');
+    const openBtn = document.getElementById('open-modal-btn');
+    const closeBtn = document.getElementById('close-modal-btn');
+    const cancelBtn = document.getElementById('cancel-modal-btn');
+    const saveBtn = document.getElementById('save-member-btn');
+    const form = document.getElementById('member-form');
+    const modalTitle = document.getElementById('modal-title');
+    const editIndexInput = document.getElementById('edit-index');
+
+    const nameInput = document.getElementById('member-name-input');
+    const roleInput = document.getElementById('member-role-input');
+    const bioInput = document.getElementById('member-bio-input');
+    const orderInput = document.getElementById('member-order-input');
+    const searchInput = document.getElementById('search-input');
+    const tbody = document.getElementById('team-tbody');
+    const statActiveCount = document.getElementById('stat-active-count');
+
+    const statusToggleBtn = document.getElementById('status-toggle-btn');
+    const toggleIndicator = document.getElementById('toggle-indicator');
+    const toggleLabel = document.getElementById('toggle-label');
+    let isActiveState = true;
+
+    function setToggle(active) {
+      isActiveState = active;
+      if (isActiveState) {
+        statusToggleBtn.classList.remove('bg-surface-container-high');
+        statusToggleBtn.classList.add('bg-primary');
+        toggleIndicator.classList.add('translate-x-6');
+        toggleIndicator.classList.remove('translate-x-0');
+        toggleLabel.textContent = 'Active';
+      } else {
+        statusToggleBtn.classList.remove('bg-primary');
+        statusToggleBtn.classList.add('bg-surface-container-high');
+        toggleIndicator.classList.remove('translate-x-6');
+        toggleIndicator.classList.add('translate-x-0');
+        toggleLabel.textContent = 'Hidden';
+      }
+    }
+
+    statusToggleBtn.addEventListener('click', function() {
+      setToggle(!isActiveState);
+    });
+
+    function openModal(isEdit = false, name = '', role = '', bio = '', rank = '1') {
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        backdrop.classList.remove('opacity-0');
+        panel.classList.remove('translate-x-full');
+      }, 10);
+
+      if (isEdit) {
+        modalTitle.textContent = 'Edit Team Member';
+        nameInput.value = name;
+        roleInput.value = role;
+        bioInput.value = bio;
+        orderInput.value = rank;
+      } else {
+        modalTitle.textContent = 'Add Team Member';
+        editIndexInput.value = '-1';
+        form.reset();
+        orderInput.value = (tbody.querySelectorAll('tr').length + 1).toString();
+        setToggle(true);
+      }
+      nameInput.focus();
+    }
+
+    function closeModal() {
+      backdrop.classList.add('opacity-0');
+      panel.classList.add('translate-x-full');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300);
+    }
+
+    openBtn.addEventListener('click', () => openModal(false));
+    closeBtn.addEventListener('click', closeModal);
+    cancelBtn.addEventListener('click', closeModal);
+    backdrop.addEventListener('click', closeModal);
+
+    // Attach row events for Edit & Delete
+    function attachRowListeners() {
+      const rows = tbody.querySelectorAll('tr');
+      rows.forEach((row, index) => {
+        const editBtn = row.querySelector('.edit-btn');
+        const deleteBtn = row.querySelector('.delete-btn');
+
+        if (editBtn) {
+          editBtn.onclick = function(e) {
+            e.stopPropagation();
+            const name = row.querySelector('.member-name')?.textContent.trim() || '';
+            const role = row.querySelector('.member-role')?.textContent.trim() || '';
+            const bio = row.querySelector('.member-bio')?.textContent.trim() || '';
+            editIndexInput.value = index.toString();
+            openModal(true, name, role, bio, (index + 1).toString());
+          };
+        }
+
+        if (deleteBtn) {
+          deleteBtn.onclick = function(e) {
+            e.stopPropagation();
+            if (confirm(`Remove profile from the public directory?`)) {
+              row.remove();
+              updateRanks();
+            }
+          };
+        }
+      });
+    }
+
+    function updateRanks() {
+      const rows = tbody.querySelectorAll('tr');
+      rows.forEach((row, idx) => {
+        const rankSpan = row.querySelector('td:first-child span');
+        if (rankSpan) rankSpan.textContent = (idx + 1).toString();
+      });
+      if (statActiveCount) {
+        statActiveCount.textContent = rows.length.toString();
+      }
+    }
+
+    saveBtn.addEventListener('click', function() {
+      const name = nameInput.value.trim();
+      const role = roleInput.value.trim();
+      const bio = bioInput.value.trim() || 'Key member of Nico Farms team driving regenerative standards.';
+      const rank = orderInput.value || '1';
+
+      if (!name || !role) {
+        alert('Please fill in both Full Name and Role.');
+        return;
+      }
+
+      const editIdx = parseInt(editIndexInput.value, 10);
+      const rows = tbody.querySelectorAll('tr');
+
+      if (editIdx >= 0 && rows[editIdx]) {
+        // Edit existing
+        const targetRow = rows[editIdx];
+        const nameEl = targetRow.querySelector('.member-name');
+        const roleEls = targetRow.querySelectorAll('.member-role');
+        const bioEls = targetRow.querySelectorAll('.member-bio');
+
+        if (nameEl) nameEl.textContent = name;
+        roleEls.forEach(el => el.textContent = role);
+        bioEls.forEach(el => el.textContent = bio);
+      } else {
+        // Create new row
+        const newRow = document.createElement('tr');
+        newRow.className = 'hover:bg-surface-container-low/60 transition-colors group';
+        newRow.innerHTML = `
+          <td class="py-space-md px-space-md text-center">
+            <span class="inline-flex items-center justify-center w-6 h-6 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">${rows.length + 1}</span>
+          </td>
+          <td class="py-space-md px-space-md">
+            <div class="flex items-center gap-space-md">
+              <div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center font-headline-sm font-semibold flex-shrink-0">
+                ${name.charAt(0).toUpperCase()}
+              </div>
+              <div class="min-w-0">
+                <div class="font-headline-sm text-headline-sm text-on-surface font-semibold member-name">${name}</div>
+                <div class="font-label-md text-label-md text-primary font-medium member-role md:hidden">${role}</div>
+                <div class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-xs md:hidden">${bio}</div>
+              </div>
+            </div>
+          </td>
+          <td class="py-space-md px-space-md hidden md:table-cell">
+            <div class="font-label-lg text-label-lg text-primary font-semibold member-role">${role}</div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 max-w-md member-bio">${bio}</p>
+          </td>
+          <td class="py-space-md px-space-md">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm font-medium">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+              Active
+            </span>
+          </td>
+          <td class="py-space-md px-space-md text-right">
+            <div class="flex items-center justify-end gap-space-xs">
+              <button type="button" class="edit-btn p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Edit Profile">
+                <span class="material-symbols-outlined text-[18px]">edit</span>
+              </button>
+              <button type="button" class="delete-btn p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-colors" title="Delete Profile">
+                <span class="material-symbols-outlined text-[18px]">delete</span>
+              </button>
+            </div>
+          </td>
+        `;
+        tbody.appendChild(newRow);
+      }
+
+      attachRowListeners();
+      updateRanks();
+      closeModal();
+    });
+
+    // Real-time table filter
+    searchInput.addEventListener('input', function(e) {
+      const term = e.target.value.toLowerCase();
+      const rows = tbody.querySelectorAll('tr');
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(term) ? '' : 'none';
+      });
+    });
+
+    // Initial listener attachment
+    attachRowListeners();
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest mt-space-xl border-t border-outline-variant/30"><div class="max-w-7xl mx-auto px-margin py-space-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg"><div class="space-y-space-sm"><img alt="Nico Farms Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X5omJiLdmVLIotrkm_1ICU3foaJihksgBQgZAqB33hmPzIdE_yoMxBVR72nq6jGygeTgTQqnt3NuwhjN8X0Y1zZrhIywXt88FmvS1Aluzts2HhJ-c9wFGYBYoqitauVYgfZzleh06FeM4oQx1P3Ep3FRo0ZrMnOmAR71mMP-lTrW73doetcTut5-4_6CbhzSqQjMlzNdve2hsa4KcTsOH7I7ptZGFLD3FJ-hxcQhQSbzFeZ0TKKnhx-gA"><p class="font-body-sm text-body-sm text-on-surface-variant">Certified Organic &amp; Biodynamic Cultivation. Direct from our fields to your table.</p><div class="flex items-start gap-space-xs text-on-surface-variant font-label-sm text-label-sm pt-space-xs"><span class="material-symbols-outlined text-[16px] text-primary flex-shrink-0">location_on</span><span class="">Nico Farms Estate • Sector 4 Agrotourism &amp; Harvest Facility</span></div></div><div class="space-y-space-xs"><div class="font-label-md text-label-md uppercase tracking-wider font-semibold text-primary">Public Website</div><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-primary transition-colors" href="https://nicofarms.com" rel="noopener noreferrer" target="_blank">Home (nicofarms.com)</a></li><li class=""><a class="hover:text-primary transition-colors" href="https://nicofarms.com/about" rel="noopener noreferrer" target="_blank">About Our Farm</a></li><li class=""><a class="hover:text-primary transition-colors" href="https://nicofarms.com/team" rel="noopener noreferrer" target="_blank">Farm Team</a></li><li class=""><a class="hover:text-primary transition-colors" href="https://nicofarms.com/contact" rel="noopener noreferrer" target="_blank">Visit &amp; Tours</a></li></ul></div><div class="space-y-space-xs"><div class="font-label-md text-label-md uppercase tracking-wider font-semibold text-primary">Operational Portals</div><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-primary transition-colors" href="#">Admin Console</a></li><li class=""><a class="hover:text-primary transition-colors" href="#">Inquiries Hub</a></li><li class=""><a class="hover:text-primary transition-colors" href="#">Harvest Schedule</a></li></ul></div><div class="space-y-space-sm"><div class="font-label-md text-label-md uppercase tracking-wider font-semibold text-primary">System Diagnostics</div><div class="inline-flex items-center gap-space-xs px-2.5 py-1 bg-surface-container rounded-lg font-label-sm text-label-sm text-primary font-medium"><span class="w-2 h-2 rounded-full bg-primary-container inline-block"></span><span class="">Production Feed Live • v2.4.1</span></div><div class="text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">cloud_done</span><span class="">Connected: api.nicofarms.com</span></div><p class="font-label-sm text-label-sm text-on-surface-variant pt-space-xs">© 2024 Nico Farms Operations. All rights reserved.</p></div></div></footer>
+
+</body></html>
