@@ -11,6 +11,9 @@ import Contact from "../pages/getInTouch/Contact";
 import Homeroute from "../pages/Homeroute";
 import ScrollToTop from "./scrollToTop";
 import Privacy from "../pages/privacy/Privacy";
+import AdminLayout from "../admin/AdminLayout";
+import { ContactsPage, TeamPage, VideoPage } from "../admin/AdminPages";
+import { Navigate } from "react-router-dom";
 
 function AppRoutes() {
   const router = createBrowserRouter([
@@ -57,6 +60,16 @@ function AppRoutes() {
               path: "/contact",
               element: <Contact />,
             },
+          ],
+        },
+        {
+          path: "/admin",
+          element: <AdminLayout />,
+          children: [
+            { index: true, element: <Navigate to="/admin/team" replace /> },
+            { path: "team", element: <TeamPage /> },
+            { path: "video", element: <VideoPage /> },
+            { path: "contacts", element: <ContactsPage /> },
           ],
         },
       ],
