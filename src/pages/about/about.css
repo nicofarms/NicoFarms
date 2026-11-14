@@ -121,6 +121,45 @@
   margin-bottom: 0;
 }
 
+.about-videos {
+  padding-top: 66px;
+}
+
+.about-video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.about-video-card {
+  overflow: hidden;
+  border: 1px solid var(--about-line);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(14, 62, 30, 0.045);
+}
+
+.about-video-card iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  background: #e8eee8;
+}
+
+.about-video-card h3 {
+  margin: 0;
+  padding: 16px;
+  color: var(--about-green);
+  font: 700 16px/1.45 "Plus Jakarta Sans", Inter, Arial, sans-serif;
+}
+
+.about-api-error {
+  margin: 0;
+  color: #a12622;
+  font-size: 13px;
+}
+
 .about-purpose {
   padding-top: 66px;
 }

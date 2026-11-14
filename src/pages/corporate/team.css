@@ -824,9 +824,30 @@
   object-position: center 40%;
 }
 
+.adewole-image img {
+  object-position: center 30%;
+}
+
 .corporate-page {
   background: #fafbf9;
 }
+
+.team-api-error {
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  border: 1px solid #f1c7c4;
+  border-radius: 6px;
+  background: #fff3f2;
+  color: #a12622;
+  font-size: 13px;
+}
+
+.team-loading {
+  margin: 0;
+  padding: 48px 0;
+  color: var(--slate);
+}
+
 .section-block {
   padding: 56px 0 48px;
 }

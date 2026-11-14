@@ -1,6 +1,30 @@
+import { useEffect, useState } from "react";
+import { getVideos, getYoutubeEmbedUrl } from "../../api/videos";
 import "./about.css";
 
 const About = () => {
+  const [videos, setVideos] = useState([]);
+  const [videoError, setVideoError] = useState("");
+
+  useEffect(() => {
+    let active = true;
+    getVideos()
+      .then((result) => {
+        if (active) setVideos(result);
+      })
+      .catch((error) => {
+        if (active) {
+          setVideoError(
+            error instanceof Error ? error.message : "Farm videos are temporarily unavailable.",
+          );
+        }
+      });
+
+    return () => {
+      active = false;
+    };
+  }, []);
+
   return (
     <main className="about">
       <section className="about-hero">
@@ -40,6 +64,43 @@ const About = () => {
           </p>
         </div>
       </section>
+
+      {(videos.length > 0 || videoError) && (
+        <section className="about-shell about-videos" id="farm-videos">
+          <div className="about-section-heading">
+            <span className="about-eyebrow">From the farm</span>
+            <h2>Farm videos</h2>
+            <p>See more of Nico Farms and our work.</p>
+          </div>
+          {videoError ? (
+            <p className="about-api-error" role="status">Farm videos are unavailable right now.</p>
+          ) : (
+            <div className="about-video-grid">
+              {videos.map((video) => {
+                const embedUrl = getYoutubeEmbedUrl(video);
+                return (
+                  <article className="about-video-card" key={video._id}>
+                    {embedUrl ? (
+                      <iframe
+                        src={embedUrl}
+                        title={video.title || "Nico Farms video"}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        loading="lazy"
+                      />
+                    ) : (
+                      <a href={video.youtubeUrl} rel="noreferrer" target="_blank">
+                        Watch this video on YouTube
+                      </a>
+                    )}
+                    <h3>{video.title || "Nico Farms video"}</h3>
+                  </article>
+                );
+              })}
+            </div>
+          )}
+        </section>
+      )}
 
       <section className="about-shell about-purpose">
         <div className="about-section-heading">

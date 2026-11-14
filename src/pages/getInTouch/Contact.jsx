@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { createContactMessage } from "../../api/contacts";
 import "./contact.css";
 
 const Contact = () => {
@@ -8,18 +9,45 @@ const Contact = () => {
     phone: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submissionStatus, setSubmissionStatus] = useState(null);
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
+    setSubmissionStatus(null);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! We will get back to you soon.");
+    if (isSubmitting) return;
+
+    setIsSubmitting(true);
+    setSubmissionStatus(null);
+
+    try {
+      await createContactMessage({
+        ...formData,
+        subject: "Website contact enquiry",
+      });
+      setFormData({ name: "", email: "", phone: "", message: "" });
+      setSubmissionStatus({
+        type: "success",
+        message: "Thank you for your message! We will get back to you soon.",
+      });
+    } catch (error) {
+      setSubmissionStatus({
+        type: "error",
+        message:
+          error instanceof Error
+            ? error.message
+            : "Your message could not be sent. Please try again.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -94,7 +122,17 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button type="submit">Send Message</button>
+            <button type="submit" disabled={isSubmitting}>
+              {isSubmitting ? "Sending..." : "Send Message"}
+            </button>
+            {submissionStatus && (
+              <p
+                className={`contact-form-status is-${submissionStatus.type}`}
+                role={submissionStatus.type === "error" ? "alert" : "status"}
+              >
+                {submissionStatus.message}
+              </p>
+            )}
           </form>
         </section>
 
