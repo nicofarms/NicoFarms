@@ -6,6 +6,13 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-    strictPort: false
+    strictPort: false,
+    proxy: {
+      "/api": {
+        target: "https://nicofarms-backend.onrender.com",
+        changeOrigin: true,
+        secure: true,
+      },
+    },
   }
 })

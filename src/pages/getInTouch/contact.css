@@ -199,6 +199,27 @@
   background: #14532d;
 }
 
+.contact-form button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
+}
+
+.contact-form-status {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.contact-form-status.is-success {
+  color: #0e3e1e;
+}
+
+.contact-form-status.is-error {
+  color: #a12622;
+}
+
 .contact-form button:focus-visible,
 .info-card a:focus-visible {
   outline: 3px solid #c99732;

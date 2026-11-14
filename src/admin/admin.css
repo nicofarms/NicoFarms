@@ -134,6 +134,154 @@
   color: white;
 }
 
+.admin-sign-out {
+  border: 0;
+  background: transparent;
+  color: var(--admin-muted);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.admin-sign-out:hover {
+  color: var(--admin-green);
+}
+
+.admin-auth-page {
+  --admin-auth-green: #174b2b;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+  gap: 48px;
+  padding: 28px 20px;
+  background: #f0fbef;
+  color: #1d2920;
+  font: 14px/1.5 Inter, "Segoe UI", Arial, sans-serif;
+}
+
+.admin-auth-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  justify-self: start;
+  color: var(--admin-auth-green);
+  font-size: 15px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.admin-auth-card {
+  width: min(440px, 100%);
+  align-self: start;
+  padding: 36px;
+  border: 1px solid #e2ece1;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 16px 48px rgba(23, 75, 43, 0.08);
+}
+
+.admin-auth-eyebrow {
+  margin: 0 0 8px;
+  color: #8a641f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.admin-auth-card h1 {
+  margin: 0;
+  color: #1d2920;
+  font-size: 28px;
+  letter-spacing: -0.03em;
+}
+
+.admin-auth-description {
+  margin: 10px 0 24px;
+  color: #5d675f;
+  line-height: 1.65;
+}
+
+.admin-auth-form {
+  display: grid;
+  gap: 10px;
+}
+
+.admin-auth-form label {
+  color: #34483a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.admin-auth-form input {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid #d7e0d8;
+  border-radius: 7px;
+  background: #fcfdfc;
+  color: #1d2920;
+}
+
+.admin-auth-form input:focus {
+  border-color: #54865c;
+  outline: 3px solid rgba(14, 62, 30, 0.1);
+}
+
+.admin-auth-form > button {
+  min-height: 46px;
+  margin-top: 6px;
+  border: 0;
+  border-radius: 7px;
+  background: var(--admin-auth-green);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.admin-auth-form > button:disabled,
+.admin-auth-secondary-actions button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.admin-auth-secondary-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.admin-auth-secondary-actions button,
+.admin-auth-back-link {
+  border: 0;
+  background: transparent;
+  color: var(--admin-auth-green);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.admin-auth-status {
+  margin: 16px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.admin-auth-status.is-success {
+  color: var(--admin-auth-green);
+}
+
+.admin-auth-status.is-error {
+  color: #a12622;
+}
+
+.admin-auth-back-link {
+  display: inline-block;
+  margin-top: 24px;
+}
+
 .admin-main {
   width: min(1440px, 100%);
   min-height: calc(100vh - 166px);
@@ -765,6 +913,76 @@
 .admin-video-form,
 .admin-video-preview {
   padding: 22px;
+}
+
+.admin-api-error {
+  margin: 12px 0;
+  padding: 10px 12px;
+  border: 1px solid #f1c7c4;
+  border-radius: 6px;
+  background: #fff3f2;
+  color: #a12622;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.admin-api-form {
+  display: grid;
+  gap: 4px;
+}
+
+.admin-video-list {
+  margin-top: 18px;
+  padding: 22px;
+}
+
+.admin-video-items {
+  display: grid;
+  gap: 8px;
+}
+
+.admin-video-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--admin-border);
+  border-radius: 7px;
+}
+
+.admin-video-item.is-selected {
+  border-color: #9ab99a;
+  background: #f5faf4;
+}
+
+.admin-video-item-select {
+  display: grid;
+  min-width: 0;
+  flex: 1;
+  gap: 4px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--admin-text);
+  cursor: pointer;
+  text-align: left;
+}
+
+.admin-video-item-select span {
+  overflow: hidden;
+  color: var(--admin-muted);
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.admin-video-embed {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 7px;
+  background: #d9e7d6;
 }
 
 .admin-card-heading {

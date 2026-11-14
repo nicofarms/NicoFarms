@@ -12,6 +12,8 @@ import Homeroute from "../pages/Homeroute";
 import ScrollToTop from "./scrollToTop";
 import Privacy from "../pages/privacy/Privacy";
 import AdminLayout from "../admin/AdminLayout";
+import AdminLogin from "../admin/AdminLogin";
+import { AdminAuthProvider, RequireAdmin } from "../admin/AdminAuth";
 import { ContactsPage, TeamPage, VideoPage } from "../admin/AdminPages";
 import { Navigate } from "react-router-dom";
 
@@ -63,8 +65,16 @@ function AppRoutes() {
           ],
         },
         {
+          path: "/admin/login",
+          element: <AdminLogin />,
+        },
+        {
           path: "/admin",
-          element: <AdminLayout />,
+          element: (
+            <RequireAdmin>
+              <AdminLayout />
+            </RequireAdmin>
+          ),
           children: [
             { index: true, element: <Navigate to="/admin/team" replace /> },
             { path: "team", element: <TeamPage /> },
@@ -75,7 +85,11 @@ function AppRoutes() {
       ],
     },
   ]);
-  return <RouterProvider router={router} />;
+  return (
+    <AdminAuthProvider>
+      <RouterProvider router={router} />
+    </AdminAuthProvider>
+  );
 }
 
 export default AppRoutes;

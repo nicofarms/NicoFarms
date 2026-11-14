@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { FiExternalLink, FiUser } from "react-icons/fi";
+import { useAdminAuth } from "./useAdminAuth";
 import "./admin.css";
 
 const adminLinks = [
@@ -9,12 +10,14 @@ const adminLinks = [
 ];
 
 function AdminLayout() {
+  const { signOut } = useAdminAuth();
+
   return (
     <div className="admin-shell">
       <header className="admin-topbar">
         <div className="admin-brand">
           <span className="admin-brand-mark">NF</span>
-          <span className="admin-badge">ADMIN PREVIEW</span>
+          <span className="admin-badge">ADMIN PORTAL</span>
         </div>
         <nav className="admin-nav" aria-label="Admin pages">
           {adminLinks.map(({ to, label }) => (
@@ -33,9 +36,12 @@ function AdminLayout() {
           <a href="/" className="admin-public-link">
             Public site <FiExternalLink aria-hidden="true" />
           </a>
-          <span className="admin-user-icon" aria-label="Admin preview account">
+          <span className="admin-user-icon" aria-label="Admin account">
             <FiUser aria-hidden="true" />
           </span>
+          <button className="admin-sign-out" onClick={signOut} type="button">
+            Sign out
+          </button>
         </div>
       </header>
       <main className="admin-main">
@@ -43,7 +49,7 @@ function AdminLayout() {
       </main>
       <footer className="admin-footer">
         <span>Nico Farms administration</span>
-        <span>Frontend preview · changes are not connected to a live service</span>
+        <span>Team, contact, and video tools connect to the API</span>
       </footer>
     </div>
   );
